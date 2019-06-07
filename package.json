@@ -1,0 +1,39 @@
+{
+  "name": "my_template",
+  "version": "1.0.0",
+  "description": "Мой шаблон для верстки",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslavvertukhov/My_template.git"
+  },
+  "author": "Yaroslav Vertuhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaroslavvertukhov/My_template/issues"
+  },
+  "homepage": "https://github.com/yaroslavvertukhov/My_template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylus": "^2.7.0",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "jquery": "^3.3.1",
+    "webpack": "^4.32.0"
+  },
+  "dependencies": {}
+}
