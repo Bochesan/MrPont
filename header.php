@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
+    <div class="outer">
+        <header class="header">
+            <div class="header__head wrapper">
+                <div class="header__nav">burger</div>
+                <a class="header__logo" href="/">
+                    <img src="/dist/images/logo.svg" alt="">
+                </a>
+                <div class="header__basket">
+                    <div class="header__search">
+                        <span>search</span>
+                        <span>basket</span>
+                    </div>
+                </div>
+            </div>
         </header>

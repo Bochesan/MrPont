@@ -8,6 +8,7 @@ const gulpStylus = require('gulp-stylus'); // компиляция stylus в CSS
 const concatCss = require('gulp-concat-css'); // модуль соединения файлов CSS
 const autoprefixer = require('gulp-autoprefixer'); // автопрефиксер для CSS
 const csso = require('gulp-csso'); // сжатие CSS
+const rupture = require('rupture'); // braikpoints for CSS
 
 // JS
 const webpack = require('webpack'); // webpack
@@ -23,9 +24,7 @@ const clean = require('gulp-clean');
 
 function browserSyncInit(cb) {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+        proxy: 'mrpont/'
     });
     cb();
 }
@@ -40,7 +39,7 @@ function watchFiles() {
     gulp.watch("./src/scripts/**/*.js", gulp.series(jsBuild, browserSyncReload));
     gulp.watch("./src/styles/**/*.styl", cssBuild);
     gulp.watch("./src/images/**/*.*", optimizationImages);
-    gulp.watch("./**/*.html", browserSyncReload);
+    gulp.watch("./**/*.php", browserSyncReload);
 }
 
 function cleanJsCss() {
@@ -57,7 +56,7 @@ function cssBuild() {
     // console.log('\x1b[32m', 'Готово!');
     return gulp.src('./src/styles/index.styl')
         .pipe(sourcemaps.init())
-        .pipe(gulpStylus())
+        .pipe(gulpStylus({use:[rupture()]}))
         .pipe(rename('main.min.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
