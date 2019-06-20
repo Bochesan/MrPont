@@ -1,3 +1,2 @@
-import * as modul1 from './modules/modul1';
-
-console.log(modul1);
+import * as headerToggle from './modules/headerToggle';
+import * as burger from './modules/burger';
