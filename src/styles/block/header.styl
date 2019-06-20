@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        z-index: 100;
+        z-index: 1000;
 
     &__menu-button
         cursor: pointer;
@@ -136,6 +136,9 @@
         opacity: 0;
         transition: opacity 0s 1s;
 
+        &:before
+            display: none;
+
     for $n in (1..10)
         .header__nav-item:nth-child({$n})
             transition: opacity 0.7s 0s
@@ -168,3 +171,213 @@
 
             &:before
                 opacity: 0.1;
+
+    // Второе меню
+    &__subnav
+        background: url('/dist/images/background.jpg') left top repeat;
+        background-size: 130px 130px;
+        padding-top: rel-size(40px);
+        padding-bottom: rel-size(40px);
+        border-bottom: 1px solid #3A3A3A;
+        position: relative;
+        z-index: 900;
+
+    &__subnav-container
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    &__subnav-item
+        margin: 0 rel-size(30px);
+        position: relative;
+        z-index: 100;
+
+        &--submenu
+            padding-right: rel-size(30px);
+            background: url('/dist/images/dropdown-icon.svg') right center no-repeat;
+            background-size: rel-size(20px) rel-size(10px);
+            transition: background-position 0.3s 0.55s;
+            position: static;
+
+            // &:hover
+            //     transition: background-position 0.4s
+            //     background-position: right 100px;
+
+            &:hover
+
+                .submenu
+                    opacity: 1;
+                    transform: translate(0,0%);
+
+                &:before
+                    content: ' ';
+                    width: 100%;
+                    height: 50px;
+                    display: block;
+                    z-index: -10;
+                    background: red;
+                    position: absolute;
+                    top: calc(100% - 50px);
+                    left: 0;
+
+        &:before
+            display: none;
+
+        &:hover
+
+            .header__subnav-link:before
+                opacity: 1;
+                width: 100%;
+
+    &__subnav-link
+        font-family: ff-Quasimodo;
+        font-size: rel-size(23px);
+        line-height: rel-size(26px);
+        color: #FEFEFE;
+        position: relative;
+        display: inline-block;
+
+        &:before
+            content: ' ';
+            display: block;
+            width: 0;
+            height: 1px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,0);
+            z-index: 10;
+            opacity: 0;
+            background: linear-gradient(to left, rgba(255,255,255,0.1), rgba(255,255,255,1), rgba(255,255,255,0.1));
+            transition: 0.3s;
+
+// Меню второго уровня
+.submenu
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: url('/dist/images/background.jpg') left top repeat;
+    background-size: 130px 130px;
+    min-width: 100%;
+    padding: rel-size(80px) rel-size(40px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #3A3A3A;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(0,-100%);
+    opacity: 0;
+    z-index: -10;
+    transition: transform 0.5s, opacity 0.7s;
+
+    &__item
+        width: 25%;
+        margin-bottom: rel-size(40px);
+        padding-right: rel-size(20px);
+
+    &__link
+        font-family: ff-Quasimodo;
+        font-size: rel-size(23px);
+        line-height: rel-size(26px);
+        color: #FEFEFE;
+        opacity: 0.8;
+        position: relative;
+        display: inline-block;
+
+
+        &:before
+            content: ' ';
+            width: rel-size(10px);
+            height: @width;
+            position: absolute;
+            top: rel-size(7px);
+            right: 100%;
+            z-index: 5;
+            border: 1px solid #fff;
+            opacity: 0.9;
+            transform: translate(-100%,0) rotate(45deg);
+            //background: url('/dist/images/dropdown-icon.svg') center center no-repeat;
+            //background-size: contain;
+            transition: opacity 1s, transform 0.5s 2s;
+            opacity: 0;
+
+        &:hover
+            opacity: 1;
+
+            &:before
+                transition: opacity 1.5s, transform 0.7s;
+                transform: translate(-100%,0) rotate(-495deg);
+                opacity: 1;
+
+
+
+// // Меню второго уровня
+// .submenu
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     background: url('/dist/images/background.jpg') left top repeat;
+//     background-size: 130px 130px;
+//     min-width: 100%;
+//     padding: rel-size(5px) 0;
+//     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+//
+//     &__item
+//         padding: 0;
+//         margin: rel-size(5px) 0;
+//         text-align: center;
+//
+//         &:before
+//             display: none;
+//
+//     &__link
+//         font-family: ff-Quasimodo;
+//         font-size: rel-size(23px);
+//         line-height: rel-size(26px);
+//         color: #FEFEFE;
+//         position: relative;
+//         display: inline-block;
+//         width: 100%;
+//         text-align: center;
+//         padding: rel-size(5px) rel-size(30px);
+//         overflow: hidden;
+//         opacity: 0.8;
+//         transition: opacity 0.3s;
+//
+//         &:before
+//             content: ' ';
+//             width: rel-size(15px);
+//             height: @width;
+//             position: absolute;
+//             top: 50%;
+//             right: 100%;
+//             z-index: 5;
+//             transform: translate(0,-50%) rotate(-90deg);
+//             background: url('/dist/images/dropdown-icon.svg') center center no-repeat;
+//             background-size: contain;
+//             transition: opacity 1.5s, transform 0.5s;
+//             opacity: 0;
+//
+//         &:after
+//             content: ' ';
+//             width: rel-size(15px);
+//             height: @width;
+//             position: absolute;
+//             top: 50%;
+//             left: 100%;
+//             z-index: 5;
+//             transform: translate(0,-50%) rotate(90deg);
+//             background: url('/dist/images/dropdown-icon.svg') center center no-repeat;
+//             background-size: contain;
+//             transition: opacity 1.5s, transform 0.5s;
+//             opacity: 0;
+//
+//         &:hover
+//             opacity: 1;
+//
+//             &:before
+//                 transform: translate(calc(100% + 5px),-50%) rotate(-90deg);
+//                 opacity: 1;
+//
+//             &:after
+//                 transform: translate(calc(-100% - 5px),-50%) rotate(90deg);
+//                 opacity: 1;

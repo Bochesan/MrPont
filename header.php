@@ -56,4 +56,34 @@
                     </div>
                 </nav>
             </div>
+            <div class="header__subnav">
+                <ul class="header__subnav-container">
+                    <li class="header__subnav-item"><a href="#" class="header__subnav-link">Кольца и перстни</a></li>
+                    <li class="header__subnav-item"><a href="#" class="header__subnav-link">Цепи</a></li>
+                    <li class="header__subnav-item"><a href="#" class="header__subnav-link">Браслеты</a></li>
+                    <li class="header__subnav-item header__subnav-item--submenu">
+                        <a href="#" class="header__subnav-link">Весь каталог</a>
+                        <div class="header__subnav-submenu">
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="#" class="submenu__link">Браслеты</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Каффы</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Трости</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Авторучки серебряные</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Кольца и перстни</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Запонки</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Зажимы для купюр</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Зажигалки</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Подвески и кулоны</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Пряжки к ремням</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Цепи, ожерелья</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Пепельницы</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Серьги</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Тремляки для ножей</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Брелоки</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Изделия из кожи</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </header>
