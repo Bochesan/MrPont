@@ -13,12 +13,19 @@
             <div class="header__body">
 
                 <div class="header__head wrapper">
-                    <div class="header__menu-button">
-                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div id='menu-button' class="header__menu-button menu-button">
+                        <!-- <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1H18" stroke="#E1E1E1"/>
                             <path d="M0 6H18" stroke="#E1E1E1"/>
                             <path d="M0 11H18" stroke="#E1E1E1"/>
-                        </svg>
+                        </svg> -->
+
+                          <div class="menu-button__inner">
+                            <div class="menu-button__line menu-button__line--1"></div>
+                            <div class="menu-button__line menu-button__line--2"></div>
+                            <div class="menu-button__line menu-button__line--3"></div>
+                          </div>
+                        
                     </div>
                     <a class="header__logo" href="/">
                         <img src="/dist/images/logo.svg" alt="">

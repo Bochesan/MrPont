@@ -30,8 +30,9 @@
     &__head
         background: url('/dist/images/background.jpg') left top repeat;
         background-size: 130px 130px;
-        padding-top: rel-size(40px);
-        padding-bottom: rel-size(40px);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 100px;
         border-bottom: 1px solid #3A3A3A;
         display: flex;
         justify-content: space-between;
@@ -71,8 +72,9 @@
         top: 100%;
         left: 0;
         width: 100%;
-        height: calc(100vh - 90px);
-        padding-top: rel-size(60px);
+        height: 100vh;
+        //padding-bottom: rel-size(100px)
+        height: calc(100vh - 100px);
         background: #eee;
         transform: translate(0,-100%);
         z-index: 50;
@@ -154,16 +156,16 @@
 
     &__nav-link
         font-family: ff-Quasimodo;
-        font-size: rel-size(73px);
-        line-height: rel-size(63px);
+        font-size: rel-size(83px);
+        line-height: rel-size(73px);
         position: relative;
         display: inline-block;
 
         &:before
             content: attr(data-name);
             font-family: ff-Quasimodo;
-            font-size: rel-size(168px);
-            line-height: rel-size(142px);
+            font-size: rel-size(208px);
+            line-height: rel-size(182px);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -191,9 +193,13 @@
         transition: transform 0.5s;
         z-index: 900;
 
+        &.hide
+            transform: translate(0,-100%) !important;
+
     &__subnav-container
         background: url('/dist/images/background.jpg') left top repeat;
         background-size: 130px 130px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -380,3 +386,60 @@
 //             &:after
 //                 transform: translate(calc(-100% - 5px),-50%) rotate(90deg);
 //                 opacity: 1;
+
+
+// Burger
+lines-color = #E1E1E1
+width-menu = 24px
+height-menu = 14px
+lines-height = height-menu / 8
+
+.menu-button
+  // position absolute
+  // top 50%
+  // left 50%
+  // transform translate(-50%, -50%)
+  cursor pointer
+
+  &__inner
+    position relative
+    width width-menu
+    height height-menu
+
+  &__line
+    width 100%
+    height lines-height
+    background lines-color
+    //border-bottom: 2px solid lines-color;
+    border-radius 5px
+    position absolute
+    left 0
+    transition top 0.3s 0.4s, bottom 0.3s 0.4s, transform 0.3s, opacity 0.1s 0.3s
+
+    &--1
+      top 0
+      transform translate(0,-50%)
+
+    &--2
+      top 50%
+      transform translate(0,-50%)
+
+    &--3
+      top 100%
+      transform translate(0,-50%)
+
+  &.opened
+
+    & .menu-button__line
+      transition top 0.3s, bottom 0.3s, transform 0.3s 0.3s, opacity 0.1s 0.3s
+
+      &--1
+        top 50%
+        transform rotate(45deg)
+
+      &--2
+        opacity 0
+
+      &--3
+        top 50%
+        transform rotate(-45deg)
