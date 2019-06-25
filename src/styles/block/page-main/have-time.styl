@@ -8,7 +8,7 @@
         justify-content: center;
         align-items: center;
 
-    &__title
+    &__head-title
         text-align: center;
         font-family: ff-Quasimodo;
         font-size: rel-size(83px);
@@ -40,7 +40,7 @@
             left: calc(100% + 100px);
             transform: rotate(45deg);
 
-    &__info
+    &__head-info
         position: absolute;
         left: 0;
         top: 0;
@@ -54,3 +54,98 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         opacity: 0;
         animation: opacity 1s 1.5s linear forwards;
+
+    &__body
+        display: flex;
+        padding: rel-size(80px) 0 rel-size(200px);
+
+    &__price-section
+        position: relative;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: rel-size(118px);
+
+    &__old-price
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        text-align: right;
+        text-decoration-line: line-through;
+        color: #919191;
+        margin-bottom: rel-size(10px);
+
+    &__new-price
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        text-align: right;
+        color: #FEFEFE;
+        margin-bottom: rel-size(40px);
+
+    &__image-section
+        width: 40%;
+        position: relative;
+
+    &__slider
+        height: 100%;
+        width: 100%;
+        padding: rel-size(80px) 0 rel-size(120px);
+        position: relative;
+
+        &:before
+            content: ' ';
+            width: 300px;
+            height: @width;
+            border: 1px solid #3A3A3A;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            z-index: -1;
+
+        .swiper-slide
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        .swiper-pagination
+            bottom: 0;
+
+        .swiper-pagination-bullet
+            background: none;
+            border-radius: 0;
+            width: 10px;
+            height: @width;
+            border: 1px solid #3A3A3A;
+            transform: rotate(45deg);
+            margin: 0 10px !important;
+            user-select: none;
+
+
+    &__info-section
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: rel-size(118px);
+
+    &__info-title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(40px);
+
+    &__info-text
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;

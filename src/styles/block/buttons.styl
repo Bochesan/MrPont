@@ -1,0 +1,27 @@
+.button
+    font-family: ff-Quasimodo;
+    font-size: rel-size(31px);
+    line-height: rel-size(27px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #202020;
+    min-width: rel-size(200px);
+    min-height: rel-size(60px);
+    background: white;
+    padding: rel-size(14px) rel-size(10px);
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+    &:hover
+        background: rgba(255,255,255,0.65);
+        transform: translate(0,-5px);
+        box-shadow: 0px 5px 15px rgba(0,0,0,1);
+
+    &:active
+        transform: translate(0,0px);
+        box-shadow: 0px 1px 1px rgba(0,0,0,0);
