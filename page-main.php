@@ -24,12 +24,6 @@
             <span class="have-time__head-info">Успейте приобрести</span>
         </div>
         <div class="have-time__body">
-            <div class="have-time__price-section">
-                <div class="have-time__old-price">32 499 р</div>
-                <div class="have-time__new-price">22 499 р</div>
-                <div class="have-time__button-price button">В корзину</div>
-            </div>
-            <div class="have-time__image-section">
                 <!-- <img src="/dist/images/ring.png" alt=""> -->
                 <!-- Slider main container -->
                 <div class="have-time__slider swiper-container">
@@ -37,13 +31,49 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="/dist/images/ring.png" alt="">
+                            <div class="have-time__price-section">
+                                <div class="have-time__shadow-title">Antique <br> crown</div>
+                                <div class="have-time__old-price">32 499 р</div>
+                                <div class="have-time__new-price">22 499 р</div>
+                                <div class="have-time__button-price button">В корзину</div>
+                            </div>
+                            <div class="have-time__image-section">
+                                <img src="/dist/images/ring.png" alt="">
+                            </div>
+                            <div class="have-time__info-section">
+                                <div class="have-time__info-title">Antique crown</div>
+                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/images/pryag.png" alt="">
+                            <div class="have-time__price-section">
+                                <div class="have-time__shadow-title">Antique <br> crown</div>
+                                <div class="have-time__old-price">32 499 р</div>
+                                <div class="have-time__new-price">22 499 р</div>
+                                <div class="have-time__button-price button">В корзину</div>
+                            </div>
+                            <div class="have-time__image-section">
+                                <img src="/dist/images/pryag.png" alt="">
+                            </div>
+                            <div class="have-time__info-section">
+                                <div class="have-time__info-title">Antique crown</div>
+                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/images/bras.png" alt="">
+                            <div class="have-time__price-section">
+                                <div class="have-time__shadow-title">Antique <br> crown</div>
+                                <div class="have-time__old-price">32 499 р</div>
+                                <div class="have-time__new-price">22 499 р</div>
+                                <div class="have-time__button-price button">В корзину</div>
+                            </div>
+                            <div class="have-time__image-section">
+                                <img src="/dist/images/bras.png" alt="">
+                            </div>
+                            <div class="have-time__info-section">
+                                <div class="have-time__info-title">Antique crown</div>
+                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            </div>
                         </div>
                     </div>
                     <!-- If we need pagination -->
@@ -51,10 +81,7 @@
 
                 </div>
             </div>
-            <div class="have-time__info-section">
-                <div class="have-time__info-title">Antique crown</div>
-                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
-            </div>
+
         </div>
     </div>
 </main>

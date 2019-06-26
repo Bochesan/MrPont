@@ -68,6 +68,20 @@
         justify-content: center;
         padding-right: rel-size(118px);
 
+    &__shadow-title
+            font-family: ff-Quasimodo;
+            font-size: 10vw;
+            line-height: 11vw;
+            opacity: 0.6;
+            position: absolute;
+            top: -3.5vw;
+            right: 0;
+            text-align: right;
+            z-index: -1;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #3A3A3A;
+
     &__old-price
         font-family: ff-Quasimodo;
         font-size: rel-size(42px);
@@ -88,23 +102,23 @@
     &__image-section
         width: 40%;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: rel-size(400px);
+
+        img
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%,-50%);
+            max-height: 100%;
 
     &__slider
         height: 100%;
         width: 100%;
-        padding: rel-size(80px) 0 rel-size(120px);
+        padding: rel-size(60px) 0 rel-size(120px);
         position: relative;
-
-        &:before
-            content: ' ';
-            width: 300px;
-            height: @width;
-            border: 1px solid #3A3A3A;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%) rotate(45deg);
-            z-index: -1;
 
         .swiper-slide
             display: flex;
@@ -112,15 +126,75 @@
             justify-content: center;
             position: relative;
 
+            &:before
+                content: ' ';
+                width: 300px;
+                height: @width;
+                border: 1px solid #3A3A3A;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(45deg) scale(1.5);
+                opacity: 0;
+                transition: 2s 0.5s;
+                z-index: -1;
+
+            & .have-time__price-section
+                transform: translate(-50%,0);
+                opacity: 0;
+                transition: 2s;
+
+            & .have-time__info-section
+                transform: translate(50%,0);
+                opacity: 0;
+                transition: 2s;
+
+            & .have-time__image-section
+                transform: scale(1.1);
+                opacity: 0;
+                transition: 2s 1s;
+
+            & .have-time__shadow-title
+                opacity: 0;
+                transform: translate(50%,0) scale(0.9);
+                transition: 2s;
+
+        .swiper-slide-active
+
+            &:before
+                transform: translate(-50%,-50%) rotate(45deg) scale(1);
+                opacity: 1;
+                transition: 2s 3s;
+
+            & .have-time__price-section
+                transform: translate(0%,0);
+                opacity: 1;
+                transition: 2s 2s;
+
+            & .have-time__info-section
+                transform: translate(0%,0);
+                opacity: 1;
+                transition: 2s 2s;
+
+            & .have-time__image-section
+                transform: scale(1);
+                opacity: 1;
+                transition: 2s 1.5s;
+
+            & .have-time__shadow-title
+                opacity: 1;
+                transform: translate(0%,0) scale(1);
+                transition: opacity 2s 3.5s, transform 0s 0s;
+
         .swiper-pagination
             bottom: 0;
 
         .swiper-pagination-bullet
             background: none;
             border-radius: 0;
-            width: 10px;
+            width: 14px;
             height: @width;
-            border: 1px solid #3A3A3A;
+            border: 1px solid #FEFEFE;
             transform: rotate(45deg);
             margin: 0 10px !important;
             user-select: none;

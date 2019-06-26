@@ -1,6 +1,5 @@
 var haveTime = document.querySelector('.have-time__slider');
-
-var slide = new Swiper(haveTime,{
+var haveTimeSlider = new Swiper(haveTime,{
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -9,4 +8,8 @@ var slide = new Swiper(haveTime,{
       fadeEffect: {
         crossFade: true
       },
+      autoplay: {
+        delay: 6000,
+      },
+      speed: 4000,
     });
