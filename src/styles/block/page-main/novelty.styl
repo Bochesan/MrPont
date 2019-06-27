@@ -1,0 +1,100 @@
+.novelty
+    padding: rel-size(30px);
+
+    &__article
+        max-width: rel-size(400px);
+        width: 100%;
+
+    &__article-text
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        margin-bottom: rel-size(40px);
+
+    &__image
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+
+        img
+            max-width: 100%;
+            max-height: 100%;
+
+    &__slider
+        height: rel-size(500px);
+        border: 1px solid #3A3A3A;
+        position: relative;
+        overflow: initial !important;
+        margin-bottom: rel-size(40px);
+
+        & .swiper-slide
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: rel-size(50px);
+
+    &__row
+        display: flex;
+        justify-content: space-between;
+        margin-top: rel-size(120px);
+        margin-bottom: rel-size(122px);
+
+        &--centered
+            justify-content: center;
+
+    &__gallery--2
+        transform: translate(0,70%);
+        margin: 0 !important;
+
+    &__gallery--3
+        transform: translate(-70%,0);
+
+    &__gallery-info
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        // position: absolute;
+        // top: calc(100% + 20px);
+        // left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 1s;
+
+    &__gallery
+        width: rel-size(400px);
+        position: relative;
+
+        & .shadow-title
+            top: 5%;
+            right: 30%;
+            transition: 1s;
+
+        &:hover
+
+            .shadow-title
+                color: #fff;
+
+            .novelty__gallery-info
+                opacity: 1;
+
+.swiper-pagination-bullet
+    background: none;
+    border-radius: 0;
+    width: 14px;
+    height: @width;
+    border: 1px solid #FEFEFE;
+    transform: rotate(45deg);
+    margin: 0 10px !important;
+    user-select: none;

@@ -1,0 +1,112 @@
+.abonnement
+    padding-top: rel-size(20px);
+    padding-bottom: rel-size(60px);
+    margin-top: rel-size(120px);
+    border-top: 1px solid #3A3A3A;
+    border-bottom: 1px solid #3A3A3A;
+    position: relative;
+    margin-bottom: 60px;
+
+    &__form
+        width: rel-size(690px);
+
+    &__form-title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(83px);
+        line-height: rel-size(73px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(40px);
+
+    &__form-input
+        display: flex;
+        height: 60px;
+        margin-bottom: rel-size(20px);
+
+        input[type="text"]
+            width: calc(100% - 120px);
+            background: transparent;
+            border: 1px solid #3A3A3A;
+            padding: 0 20px;
+            font-family: ff-PD;
+            font-style: normal;
+            font-weight: normal;
+            font-size: rel-size(18px);
+            line-height: rel-size(34px);
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #919191;
+            user-select: none;
+            outline: none;
+
+        input[type="submit"]
+            width: 120px;
+            background: white;
+            border: none;
+            font-family: ff-Quasimodo;
+            font-size: rel-size(31px);
+            line-height: rel-size(27px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #202020;
+
+    &__form-label
+        cursor: pointer;
+
+        input
+            display: none;
+
+        input:checked + .abonnement__form-checkbox:before
+            background: white;
+
+    &__form-checkbox
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        padding-left: rel-size(55px);
+        position: relative;
+
+        &:before
+            content: ' ';
+            width: rel-size(10px);
+            height: @width;
+            border: 1px solid #919191;
+            transform: rotate(45deg);
+            position: absolute;
+            left: rel-size(20px);
+            top: rel-size(11px);
+
+    &__image
+        width: rel-size(600px);
+        height: @width;
+        overflow: hidden;
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        text-align: center;
+        padding: 20px
+
+        img
+            animation: death 30s linear infinite;
+
+@keyframes death {
+    0% {
+        transform: translate(5px, -5px);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(5px, -5px);
+    }
+}

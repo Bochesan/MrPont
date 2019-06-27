@@ -19,71 +19,201 @@
     </div>
 
     <div class="have-time wrapper">
-        <div class="have-time__head">
-            <div class="have-time__head-title">Успейте<br> приобрести</div>
-            <span class="have-time__head-info">Успейте приобрести</span>
+        <div class="section-head">
+            <div class="section-head__title">Успейте<br> приобрести</div>
+            <div class="section-head__info">Успейте приобрести</div>
         </div>
         <div class="have-time__body">
-                <!-- <img src="/dist/images/ring.png" alt=""> -->
+            <!-- <img src="/dist/images/ring.png" alt=""> -->
+            <!-- Slider main container -->
+            <div class="have-time__slider swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="have-time__price-section">
+                            <div class="shadow-title">Antique <br> crown</div>
+                            <div class="have-time__old-price">32 499 р</div>
+                            <div class="have-time__new-price">22 499 р</div>
+                            <div class="have-time__button-price button">В корзину</div>
+                        </div>
+                        <div class="have-time__image-section">
+                            <img src="/dist/images/ring.png" alt="">
+                        </div>
+                        <div class="have-time__info-section">
+                            <div class="have-time__info-title">Antique crown</div>
+                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="have-time__price-section">
+                            <div class="shadow-title">Antique <br> crown</div>
+                            <div class="have-time__old-price">32 499 р</div>
+                            <div class="have-time__new-price">22 499 р</div>
+                            <div class="have-time__button-price button">В корзину</div>
+                        </div>
+                        <div class="have-time__image-section">
+                            <img src="/dist/images/pryag.png" alt="">
+                        </div>
+                        <div class="have-time__info-section">
+                            <div class="have-time__info-title">Antique crown</div>
+                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="have-time__price-section">
+                            <div class="shadow-title">Antique <br> crown</div>
+                            <div class="have-time__old-price">32 499 р</div>
+                            <div class="have-time__new-price">22 499 р</div>
+                            <div class="have-time__button-price button">В корзину</div>
+                        </div>
+                        <div class="have-time__image-section">
+                            <img src="/dist/images/bras.png" alt="">
+                        </div>
+                        <div class="have-time__info-section">
+                            <div class="have-time__info-title">Antique crown</div>
+                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="novelty wrapper">
+        <div class="section-head">
+            <div class="section-head__title">Новинки</div>
+            <div class="section-head__info">Новинки</div>
+        </div>
+
+        <div class="novelty__row">
+            <div class="novelty__article">
+                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-button button button--dark">Подробнее</div>
+            </div>
+            <div class="novelty__gallery">
+                <div class="shadow-title">Antique <br> crown</div>
                 <!-- Slider main container -->
-                <div class="have-time__slider swiper-container">
+                <div class="novelty__slider novelty__slider--1 swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="have-time__price-section">
-                                <div class="have-time__shadow-title">Antique <br> crown</div>
-                                <div class="have-time__old-price">32 499 р</div>
-                                <div class="have-time__new-price">22 499 р</div>
-                                <div class="have-time__button-price button">В корзину</div>
-                            </div>
-                            <div class="have-time__image-section">
-                                <img src="/dist/images/ring.png" alt="">
-                            </div>
-                            <div class="have-time__info-section">
-                                <div class="have-time__info-title">Antique crown</div>
-                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            <div class="novelty__image">
+                                <img src="/dist/images/sl1.png" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="have-time__price-section">
-                                <div class="have-time__shadow-title">Antique <br> crown</div>
-                                <div class="have-time__old-price">32 499 р</div>
-                                <div class="have-time__new-price">22 499 р</div>
-                                <div class="have-time__button-price button">В корзину</div>
-                            </div>
-                            <div class="have-time__image-section">
+                            <div class="novelty__image">
                                 <img src="/dist/images/pryag.png" alt="">
                             </div>
-                            <div class="have-time__info-section">
-                                <div class="have-time__info-title">Antique crown</div>
-                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
-                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="have-time__price-section">
-                                <div class="have-time__shadow-title">Antique <br> crown</div>
-                                <div class="have-time__old-price">32 499 р</div>
-                                <div class="have-time__new-price">22 499 р</div>
-                                <div class="have-time__button-price button">В корзину</div>
-                            </div>
-                            <div class="have-time__image-section">
+                            <div class="novelty__image">
                                 <img src="/dist/images/bras.png" alt="">
-                            </div>
-                            <div class="have-time__info-section">
-                                <div class="have-time__info-title">Antique crown</div>
-                                <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                             </div>
                         </div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-
                 </div>
-            </div>
+                <!-- Slider main container -->
 
+                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </div>
+            <div class="novelty__gallery novelty__gallery--2">
+                <div class="shadow-title">Crosses</div>
+                <div class="novelty__slider novelty__slider--2 swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/sl2.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/pryag.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/sl3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </div>
+        </div>
+        <div class="novelty__row novelty__row--centered">
+            <div class="novelty__gallery novelty__gallery--3">
+                <div class="shadow-title">Warrior</div>
+                <!-- Slider main container -->
+                <div class="novelty__slider novelty__slider--3 swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/sl3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/sl2.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="novelty__image">
+                                <img src="/dist/images/bras.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </div>
         </div>
     </div>
+
+    <div class="abonnement wrapper">
+        <div class="section-head">
+            <div class="section-head__info">Подписка</div>
+        </div>
+        <div class="abonnement__row">
+            <div class="abonnement__form">
+                <form action="">
+                    <div class="abonnement__form-title">Оставайтесь в курсе <br> новинок и скидок!</div>
+                    <div class="abonnement__form-input">
+                        <input type="text" name="" value="" placeholder="Введите Ваш e-mail">
+                        <input type="submit" name="" value="Ok">
+                    </div>
+                    <label class="abonnement__form-label">
+                        <input type="checkbox" name="" value="">
+                        <div class="abonnement__form-checkbox">Я ознакомлен(-а) и согласен(-а) с условиями использования Персональных данных</div>
+                    </label>
+                </form>
+            </div>
+            <div class="abonnement__image">
+                <img src="/dist/images/death.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </main>
 
 <? require('footer.php'); ?>
