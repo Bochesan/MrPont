@@ -42,7 +42,7 @@
                         </div>
                         <div class="have-time__info-section">
                             <div class="have-time__info-title">Antique crown</div>
-                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            <div class="have-time__info-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="have-time__info-section">
                             <div class="have-time__info-title">Antique crown</div>
-                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            <div class="have-time__info-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -72,7 +72,7 @@
                         </div>
                         <div class="have-time__info-section">
                             <div class="have-time__info-title">Antique crown</div>
-                            <div class="have-time__info-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                            <div class="have-time__info-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
 
         <div class="novelty__row">
             <div class="novelty__article">
-                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
             </div>
             <div class="novelty__gallery shadow-name">
@@ -122,7 +122,7 @@
                 </div>
                 <!-- Slider main container -->
 
-                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
             <div class="novelty__gallery novelty__gallery--2 shadow-name">
                 <div class="shadow-name__title">Crosses</div>
@@ -150,7 +150,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
         </div>
         <div class="novelty__row novelty__row--centered">
@@ -181,7 +181,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
         </div>
     </div>
@@ -217,7 +217,7 @@
         </div>
         <div class="hits__row hits__row--sb">
             <div class="novelty__article">
-                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
             </div>
             <a href="#" class="hits__product hits__product--1 shadow-name">
@@ -225,7 +225,7 @@
                     <div class="shadow-name__title">Antique <br> Crown</div>
                     <img src="/dist/images/skull-ring.png" alt="">
                 </div>
-                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="hits__product-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
         </div>
         <div class="hits__row hits__row--sb">
@@ -234,14 +234,14 @@
                     <div class="shadow-name__title">Crosses</div>
                     <img src="/dist/images/sl1.png" alt="">
                 </div>
-                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="hits__product-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
             <a href="#" class="hits__product hits__product--3 shadow-name">
                 <div class="hits__product-image">
                     <div class="shadow-name__title">Warrior</div>
                     <img src="/dist/images/bras.png" alt="">
                 </div>
-                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="hits__product-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
         </div>
     </div>
@@ -253,33 +253,33 @@
         </div>
         <div class="advantages__row advantages__row--sb">
             <div class="novelty__article">
-                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
             </div>
             <div class="advantages__container">
                 <div class="advantages-box">
                     <div class="advantages-box__title">Бесплатное обслуживание</div>
-                    <div class="advantages-box__text">Бесплатное изменение размера изделия (кольцо, перстень, браслет и др.) при покупке . Обслуживание проданных изделий (ремонт, чистка, изменения и др.) </div>
+                    <div class="advantages-box__text">Бесплатное изменение размера изделия (кольцо, перстень, браслет и&nbsp;др.) при покупке. Обслуживание проданных изделий (ремонт, чистка, изменения и&nbsp;др.)</div>
                 </div>
                 <div class="advantages-box">
                     <div class="advantages-box__title">Собственное производство</div>
-                    <div class="advantages-box__text"> Собственное производство большинства представленных изделий. Возможность изготовления большинства наших моделей также и в золоте  </div>
+                    <div class="advantages-box__text">Собственное производство большинства представленных изделий. Возможность изготовления большинства наших моделей также и&nbsp;в&nbsp;золоте</div>
                 </div>
                 <div class="advantages-box">
                     <div class="advantages-box__title">Замена вставок</div>
-                    <div class="advantages-box__text">Возможность изготовления большинства наших моделей с заменой одних видов вставок (камней) на любые другие </div>
+                    <div class="advantages-box__text">Возможность изготовления большинства наших моделей с&nbsp;заменой одних видов вставок (камней) на&nbsp;любые другие</div>
                 </div>
                 <div class="advantages-box">
                     <div class="advantages-box__title">Высокое качество</div>
-                    <div class="advantages-box__text">Высокое качество всех изделий, независимо от цены. Продуманное ценообразование </div>
+                    <div class="advantages-box__text">Высокое качество всех изделий, независимо от&nbsp;цены. Продуманное ценообразование</div>
                 </div>
                 <div class="advantages-box">
                     <div class="advantages-box__title">Индивидуальные заказы</div>
-                    <div class="advantages-box__text">Индивидуальное изготовление изделий по эскизам или идеям заказчика </div>
+                    <div class="advantages-box__text">Индивидуальное изготовление изделий по&nbsp;эскизам или идеям заказчика</div>
                 </div>
                 <div class="advantages-box">
                     <div class="advantages-box__title">Скидки клиентам</div>
-                    <div class="advantages-box__text">Быстрая доставка. Скидки постоянным клиентам </div>
+                    <div class="advantages-box__text">Быстрая доставка. Скидки постоянным клиентам</div>
                 </div>
             </div>
         </div>
