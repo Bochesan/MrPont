@@ -94,8 +94,8 @@
                 <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
             </div>
-            <div class="novelty__gallery">
-                <div class="shadow-title">Antique <br> crown</div>
+            <div class="novelty__gallery shadow-name">
+                <div class="shadow-name__title">Antique <br> crown</div>
                 <!-- Slider main container -->
                 <div class="novelty__slider novelty__slider--1 swiper-container">
                     <!-- Additional required wrapper -->
@@ -124,8 +124,8 @@
 
                 <div class="novelty__gallery-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
-            <div class="novelty__gallery novelty__gallery--2">
-                <div class="shadow-title">Crosses</div>
+            <div class="novelty__gallery novelty__gallery--2 shadow-name">
+                <div class="shadow-name__title">Crosses</div>
                 <div class="novelty__slider novelty__slider--2 swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -154,8 +154,8 @@
             </div>
         </div>
         <div class="novelty__row novelty__row--centered">
-            <div class="novelty__gallery novelty__gallery--3">
-                <div class="shadow-title">Warrior</div>
+            <div class="novelty__gallery novelty__gallery--3 shadow-name">
+                <div class="shadow-name__title">Warrior</div>
                 <!-- Slider main container -->
                 <div class="novelty__slider novelty__slider--3 swiper-container">
                     <!-- Additional required wrapper -->
@@ -200,7 +200,7 @@
                     </div>
                     <label class="abonnement__form-label">
                         <input type="checkbox" name="" value="">
-                        <div class="abonnement__form-checkbox">Я ознакомлен(-а) и согласен(-а) с условиями использования Персональных данных</div>
+                        <div class="abonnement__form-checkbox">Я ознакомлен(-а) и согласен(-а) с условиями использования <a href="#" target="_blank">Персональных данных</a></div>
                     </label>
                 </form>
             </div>
@@ -208,6 +208,45 @@
                 <img src="/dist/images/death.png" alt="">
             </div>
         </div>
+    </div>
+
+    <div class="hits wrapper">
+        <div class="section-head">
+            <div class="section-head__title">Хиты продаж</div>
+            <div class="section-head__info">Бестселлеры</div>
+        </div>
+
+        <div class="hits__row hits__row--sb">
+            <div class="novelty__article">
+                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-button button button--dark">Подробнее</div>
+            </div>
+            <a href="#" class="hits__product hits__product--1 shadow-name">
+                <div class="hits__product-image">
+                    <div class="shadow-name__title">Antique <br> Crown</div>
+                    <img src="/dist/images/skull-ring.png" alt="">
+                </div>
+                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </a>
+        </div>
+
+        <div class="hits__row hits__row--sb">
+            <a href="#" class="hits__product hits__product--2 shadow-name">
+                <div class="hits__product-image">
+                    <div class="shadow-name__title">Crosses</div>
+                    <img src="/dist/images/sl1.png" alt="">
+                </div>
+                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </a>
+            <a href="#" class="hits__product hits__product--3 shadow-name">
+                <div class="hits__product-image">
+                    <div class="shadow-name__title">Warrior</div>
+                    <img src="/dist/images/bras.png" alt="">
+                </div>
+                <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+            </a>
+        </div>
+
     </div>
 
 
