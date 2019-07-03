@@ -1,0 +1,39 @@
+.advantages
+
+    &__row
+
+        &--sb
+            display: flex;
+            justify-content: space-between;
+
+    &__container
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        transform: translate(0,20%);
+
+.advantages-box
+    width: rel-size(400px);
+    margin: 0 rel-size(160px) rel-size(80px) 0;
+
+    +below(1560px)
+        margin: 0 rel-size(80px) rel-size(80px) 0;
+
+    &:nth-child(2n)
+        margin-right: 0;
+
+    &__title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(20px);
+
+    &__text
+        font-family:ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;

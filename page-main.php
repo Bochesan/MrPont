@@ -215,7 +215,6 @@
             <div class="section-head__title">Хиты продаж</div>
             <div class="section-head__info">Бестселлеры</div>
         </div>
-
         <div class="hits__row hits__row--sb">
             <div class="novelty__article">
                 <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
@@ -229,7 +228,6 @@
                 <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
         </div>
-
         <div class="hits__row hits__row--sb">
             <a href="#" class="hits__product hits__product--2 shadow-name">
                 <div class="hits__product-image">
@@ -246,7 +244,45 @@
                 <div class="hits__product-info">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
         </div>
+    </div>
 
+    <div class="advantages wrapper">
+        <div class="section-head">
+            <div class="section-head__title">Преимущества</div>
+            <div class="section-head__info">Индивидуальные заказы</div>
+        </div>
+        <div class="advantages__row advantages__row--sb">
+            <div class="novelty__article">
+                <div class="novelty__article-text">Изумруд - драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-button button button--dark">Подробнее</div>
+            </div>
+            <div class="advantages__container">
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Бесплатное обслуживание</div>
+                    <div class="advantages-box__text">Бесплатное изменение размера изделия (кольцо, перстень, браслет и др.) при покупке . Обслуживание проданных изделий (ремонт, чистка, изменения и др.) </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Собственное производство</div>
+                    <div class="advantages-box__text"> Собственное производство большинства представленных изделий. Возможность изготовления большинства наших моделей также и в золоте  </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Замена вставок</div>
+                    <div class="advantages-box__text">Возможность изготовления большинства наших моделей с заменой одних видов вставок (камней) на любые другие </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Высокое качество</div>
+                    <div class="advantages-box__text">Высокое качество всех изделий, независимо от цены. Продуманное ценообразование </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Индивидуальные заказы</div>
+                    <div class="advantages-box__text">Индивидуальное изготовление изделий по эскизам или идеям заказчика </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__title">Скидки клиентам</div>
+                    <div class="advantages-box__text">Быстрая доставка. Скидки постоянным клиентам </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
