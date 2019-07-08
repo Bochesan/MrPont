@@ -15,19 +15,27 @@
             <div class="header__body">
 
                 <div class="header__head wrapper">
-                    <div id='menu-button' class="header__menu-button menu-button">
-                        <!-- <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H18" stroke="#E1E1E1"/>
-                            <path d="M0 6H18" stroke="#E1E1E1"/>
-                            <path d="M0 11H18" stroke="#E1E1E1"/>
-                        </svg> -->
+                    <div class="header__menu-control">
+                        <div id='menu-button' class="header__menu-button menu-button">
+                            <!-- <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1H18" stroke="#E1E1E1"/>
+                                <path d="M0 6H18" stroke="#E1E1E1"/>
+                                <path d="M0 11H18" stroke="#E1E1E1"/>
+                            </svg> -->
 
-                          <div class="menu-button__inner">
-                            <div class="menu-button__line menu-button__line--1"></div>
-                            <div class="menu-button__line menu-button__line--2"></div>
-                            <div class="menu-button__line menu-button__line--3"></div>
-                          </div>
+                              <div class="menu-button__inner">
+                                <div class="menu-button__line menu-button__line--1"></div>
+                                <div class="menu-button__line menu-button__line--2"></div>
+                                <div class="menu-button__line menu-button__line--3"></div>
+                              </div>
 
+                        </div>
+                        <span class="header__search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.5" cy="8.5" r="8" stroke="#E1E1E1"/>
+                                <path d="M14.5 14.5L19.5 19.5" stroke="#E1E1E1"/>
+                            </svg>
+                        </span>
                     </div>
                     <a class="header__logo" href="/">
                         <img src="/dist/images/logo.svg" alt="">

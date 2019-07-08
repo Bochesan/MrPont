@@ -30,12 +30,14 @@ NavMenu.prototype.open = function() {
     var self = this;
 
     this._menu.classList.add('opened');
+    this._self.classList.add('opened');
 }
 
 NavMenu.prototype.close = function() {
     var self = this;
 
     this._menu.classList.remove('opened');
+    this._self.classList.remove('opened');
 }
 
 NavMenu.prototype.scroll = function(statusMenu) {

@@ -21,8 +21,24 @@
 
         &:hover
 
-            & .header__subnav
-                transform: translate(0,0%);
+            +above(768px)
+
+                & .header__subnav
+                    transform: translate(0,0%);
+
+    +below(768px)
+
+        .header__subnav
+            transform: translate(0,-100%)!important;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+
+        &.opened
+
+            .header__subnav
+                transform: translate(0,0%)!important;
 
     &__body
         position: relative;
@@ -43,6 +59,18 @@
     &__menu-button
         cursor: pointer;
 
+    &__menu-control
+        display: flex;
+        align-items: center;
+
+        .header__search
+            display: none;
+            margin-left: rel-size(30px);
+            transform: translate(0,3px);
+
+            +below(480px)
+                display: block;
+
     &__logo
         position: absolute;
         top: 50%;
@@ -58,6 +86,9 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        +below(480px)
+            display: none;
 
     &__basket
         display: flex;
@@ -161,6 +192,10 @@
         position: relative;
         display: inline-block;
 
+        +below(480px)
+            font-size: rel-size(50px);
+            line-height: rel-size(40px);
+
         &:before
             content: attr(data-name);
             font-family: ff-Quasimodo;
@@ -177,6 +212,14 @@
             color: transparent;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: #fff;
+
+            +below(768px)
+                font-size: rel-size(150px);
+                line-height: rel-size(132px);
+
+            +below(480px)
+                font-size: rel-size(100px);
+                line-height: rel-size(80px);
 
         &:hover
 
@@ -204,8 +247,23 @@
         justify-content: center;
         align-items: center;
 
+        +below(480px)
+            height: initial;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+
     &__subnav-item
         margin: 0 rel-size(30px);
+
+        +below(768px)
+            height: 100%;
+            margin: 0 rel-size(10px);
+
+        +below(480px)
+            padding-left: 0;
+            height: initial;
+            height: auto;
 
         &--submenu
             padding-right: rel-size(30px);
@@ -238,6 +296,17 @@
         display: inline-block;
         padding-top: rel-size(40px);
         padding-bottom: rel-size(40px);
+
+        +below(768px)
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+        +below(480px)
+            height: initial;
+            height: auto;
+            padding-top: rel-size(10px);
+            padding-bottom: rel-size(10px);
 
         &:before
             content: ' ';
@@ -274,10 +343,17 @@
     display: flex;
     flex-wrap: wrap;
 
+    +below(480px)
+        padding: rel-size(40px) rel-size(20px);
+
     &__item
         width: 25%;
         margin-bottom: rel-size(40px);
         padding-right: rel-size(20px);
+
+        +below(480px)
+            width: 50%
+            margin-bottom: rel-size(15px);
 
     &__link
         font-family: ff-Quasimodo;
