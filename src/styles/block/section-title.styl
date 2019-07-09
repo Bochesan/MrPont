@@ -17,6 +17,14 @@
         position: relative;
         padding: 0 rel-size(15px);
 
+        +below(768px)
+            font-size: rel-size(63px);
+            line-height: rel-size(53px);
+
+        +below(580px)
+            font-size: rel-size(43px);
+            line-height: rel-size(33px);
+
         &:before
             content: ' ';
             width: 10px;
@@ -27,6 +35,9 @@
             right: calc(100% + 100px);
             transform: rotate(45deg);
 
+            +below(768px)
+                right: calc(100% + 30px);
+
         &:after
             content: ' ';
             width: 10px;
@@ -36,6 +47,9 @@
             top: 50%;
             left: calc(100% + 100px);
             transform: rotate(45deg);
+
+            +below(768px)
+                left: calc(100% + 30px);
 
     &__info
         position: absolute;
@@ -51,3 +65,6 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         opacity: 0;
         animation: opacity 1s 1.5s linear forwards;
+
+        +below(768px)
+            display: none;

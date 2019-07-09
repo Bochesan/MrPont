@@ -8,18 +8,18 @@ var haveTimeSlider = new Swiper(haveTime,{
       fadeEffect: {
         crossFade: true
       },
-      autoplay: {
-        delay: 4000,
-      },
+      // autoplay: {
+      //   delay: 4000,
+      // },
       speed: 3000,
     });
 
-haveTime.addEventListener('mouseenter', function(e){
-    haveTimeSlider.autoplay.stop();
-});
-haveTime.addEventListener('mouseleave', function(e){
-    haveTimeSlider.autoplay.start();
-});
+// haveTime.addEventListener('mouseenter', function(e){
+//     haveTimeSlider.autoplay.stop();
+// });
+// haveTime.addEventListener('mouseleave', function(e){
+//     haveTimeSlider.autoplay.start();
+// });
 
 var novelty1 = document.querySelector('.novelty__slider--1');
 var noveltySlider1 = new Swiper(novelty1,{
