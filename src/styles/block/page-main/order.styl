@@ -1,0 +1,59 @@
+.order
+
+    &__row
+        display: flex;
+
+    &__gallery
+        width: calc(100% - 20rem);
+
+    &__slider
+
+        .swiper-slide
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 20rem;
+            padding-top: rel-size(175px);
+            padding-bottom: rel-size(175px);
+            position: relative;
+
+            .shadow-name
+
+                .shadow-name__title
+                    font-size: 8vw;
+                    line-height: 8vw;
+
+            .order__slide-image
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 10;
+                max-width: 60%;
+                max-height: 70%;
+
+        .order__image
+            position: relative;
+            width: rel-size(250px);
+            height: rel-size(300px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+
+            img
+                max-width: 100%;
+                max-height: 100%;
+
+            &:before
+                content: ' ';
+                width: calc(100% + 100px);
+                height: calc(100% + 100px);
+                border: 1px solid #3A3A3A;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+
+        .swiper-pagination
+            padding-right: 20rem;
