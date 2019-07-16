@@ -186,54 +186,6 @@
         </div>
     </div>
 
-    <div class="order wrapper">
-        <div class="section-head">
-            <div class="section-head__title">Изделия на заказ</div>
-            <div class="section-head__info">Индивидуальные заказы</div>
-        </div>
-
-        <div class="order__row">
-            <div class="novelty__article">
-                <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
-                <div class="novelty__article-button button button--dark">Заказать</div>
-            </div>
-            <div class="order__gallery">
-                <!-- <div class="shadow-name__title">Antique <br> crown</div> -->
-                <!-- Slider main container -->
-                <div class="order__slider swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="order__image shadow-name">
-                                <div class="shadow-name__title">Antique <br> crown</div>
-                                <img src="/dist/images/sl1.png" alt="">
-                            </div>
-                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="order__image shadow-name">
-                                <div class="shadow-name__title">Antique <br> crown</div>
-                                <img src="/dist/images/pryag.png" alt="">
-                            </div>
-                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="order__image shadow-name">
-                                <div class="shadow-name__title">Antique <br> crown</div>
-                                <img src="/dist/images/bras.png" alt="">
-                            </div>
-                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-                <!-- Slider main container -->
-            </div>
-        </div>
-    </div>
-
     <div class="abonnement wrapper">
         <div class="section-head">
             <div class="section-head__info">Подписка</div>
@@ -291,6 +243,54 @@
                 </div>
                 <div class="hits__product-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
+        </div>
+    </div>
+
+    <div class="order wrapper">
+        <div class="section-head">
+            <div class="section-head__title">Изделия на заказ</div>
+            <div class="section-head__info">Индивидуальные заказы</div>
+        </div>
+
+        <div class="order__row">
+            <div class="novelty__article">
+                <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
+                <div class="novelty__article-button button button--dark">Заказать</div>
+            </div>
+            <div class="order__gallery">
+                <!-- <div class="shadow-name__title">Antique <br> crown</div> -->
+                <!-- Slider main container -->
+                <div class="order__slider swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="order__image shadow-name">
+                                <div class="shadow-name__title">Antique <br> crown</div>
+                                <img src="/dist/images/sl1.png" alt="">
+                            </div>
+                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="order__image shadow-name">
+                                <div class="shadow-name__title">Antique <br> crown</div>
+                                <img src="/dist/images/pryag.png" alt="">
+                            </div>
+                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="order__image shadow-name">
+                                <div class="shadow-name__title">Antique <br> crown</div>
+                                <img src="/dist/images/bras.png" alt="">
+                            </div>
+                            <img class="order__slide-image" src="/dist/images/to-order.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Slider main container -->
+            </div>
         </div>
     </div>
 

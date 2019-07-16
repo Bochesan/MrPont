@@ -79,8 +79,8 @@ var orderSlider = new Swiper(order,{
       fadeEffect: {
         crossFade: true
       },
-      // autoplay: {
-      //   delay: 2500,
-      // },
+      autoplay: {
+        delay: 2500,
+      },
       speed: 1500,
     });
