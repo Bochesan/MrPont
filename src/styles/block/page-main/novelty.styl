@@ -5,6 +5,18 @@
         max-width: rel-size(400px);
         width: 100%;
 
+        +below(1239px)
+            max-width: none;
+            margin-bottom: rel-size(60px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+        +below(768px)
+            align-items: flex-start;
+            text-align: left;
+
     &__article-text
         font-family: ff-PD;
         font-style: normal;
@@ -44,18 +56,21 @@
     &__row
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: rel-size(120px);
         margin-bottom: rel-size(122px);
 
+        +below(1239px)
+            padding: 0 4%;
+
+        +below(880px)
+            flex-direction: column;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+
         &--centered
             justify-content: center;
-
-    &__gallery--2
-        transform: translate(0,70%);
-        margin: 0 !important;
-
-    &__gallery--3
-        transform: translate(-70%,0);
 
     &__gallery-info
         font-family: ff-PD;
@@ -76,10 +91,33 @@
         width: rel-size(400px);
         position: relative;
 
+        +below(880px)
+            margin-bottom: rel-size(60px);
+
+        +below(420px)
+            width: 100%;
+
         &:hover
 
             .novelty__gallery-info
                 opacity: 1;
+
+    &__gallery--2
+        transform: translate(0,70%);
+        margin: 0;
+
+        +below(1239px)
+            transform: none;
+
+        +below(880px)
+            align-self: flex-end;
+            margin-bottom: rel-size(60px);
+
+    &__gallery--3
+        transform: translate(-70%,0);
+
+        +below(1239px)
+            transform: none;
 
 .swiper-pagination-bullet
     background: none;

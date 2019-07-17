@@ -1,11 +1,18 @@
 .order
     margin-bottom: rel-size(120px);
 
+    +below(1239px)
+        margin-bottom: rel-size(60px);
+
     &__row
         display: flex;
+        flex-wrap: wrap;
 
     &__gallery
         width: calc(100% - 20rem);
+
+        +below(1239px)
+            width: 100%;
 
     &__slider
 
@@ -18,11 +25,22 @@
             padding-bottom: rel-size(175px);
             position: relative;
 
+            +below(1239px)
+                padding: 0 0 rel-size(80px);
+                width: 100%;
+
             .shadow-name
 
                 .shadow-name__title
                     font-size: 8vw;
                     line-height: 8vw;
+
+                    +below(1365px)
+                        font-size: 7vw;
+                        line-height: 6vw;
+                        text-align: left;
+                        right: 20%;
+                        top: rel-size(-60px);
 
             .order__slide-image
                 position: absolute;
@@ -32,6 +50,11 @@
                 max-width: 60%;
                 max-height: 70%;
 
+                +below(1239px)
+                    position: static;
+                    max-width: 100%;
+                    max-height: 400px;
+
         .order__image
             position: relative;
             width: rel-size(250px);
@@ -40,6 +63,9 @@
             align-items: center;
             justify-content: center;
             z-index: 20;
+
+            +below(1239px)
+                display: none;
 
             img
                 max-width: 100%;
@@ -58,3 +84,6 @@
 
         .swiper-pagination
             padding-right: 20rem;
+
+            +below(1239px)
+                padding-right: 0;

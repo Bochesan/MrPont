@@ -84,3 +84,92 @@ var orderSlider = new Swiper(order,{
       },
       speed: 1500,
     });
+
+
+// window.onresize = function() {
+//     var windowWidth = document.body.clientWidth;
+//     var advantages = document.querySelector('.advantages__slider');
+//
+//     if (windowWidth < 640) {
+//         var advantagesSlider = new Swiper(advantages,{
+//               pagination: {
+//                 el: '.advantages__slider .swiper-pagination',
+//                 clickable: true,
+//               },
+//               autoplay: {
+//                 delay: 2500,
+//               },
+//               speed: 1500,
+//             });
+//     }
+//     else {
+//         advantagesSlider.destroy();
+//     }
+// }
+
+
+
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+  var breakpoint = window.matchMedia( '(min-width:640px)' );
+
+  // keep track of swiper instances to destroy later
+  var mySwiper;
+
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+
+  var breakpointChecker = function() {
+
+    // if larger viewport and multi-row layout needed
+    if ( breakpoint.matches === true ) {
+
+      // clean up old instances and inline styles when available
+	  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+
+	  // or/and do nothing
+	  return;
+
+      // else if a small viewport and single column layout needed
+      } else if ( breakpoint.matches === false ) {
+
+        // fire small viewport version of swiper
+        return enableSwiper();
+
+      }
+
+  };
+
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+
+  var enableSwiper = function() {
+
+    mySwiper = new Swiper ('.advantages__slider', {
+
+      loop: true,
+
+      keyboardControl: true,
+      grabCursor: true,
+
+      // pagination
+      pagination: {
+        el: '.advantages__slider .swiper-pagination',
+        clickable: true,
+      },
+
+    });
+
+  };
+
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+
+  // kickstart
+  breakpointChecker();

@@ -5,10 +5,17 @@ footer
 .footer
     display: flex;
 
+    +below(980px)
+        flex-wrap: wrap;
+
     &__row
         display: flex;
         justify-content: space-between;
         margin-bottom: rel-size(80px);
+
+        +below(660px)
+            display: block;
+            margin-bottom: rel-size(40px);
 
         &:last-child
             margin-bottom: 0;
@@ -16,8 +23,20 @@ footer
     &__col-1
         width: 250px;
 
+        +below(980px)
+            width: 100%;
+
     &__col-2
         width: calc(100% - 250px);
+
+        +below(980px)
+            width: 100%;
+
+    &__logo
+
+        +below(980px)
+            display: inline-block;
+            margin-bottom: rel-size(20px);
 
     &__address
         font-family: ff-Quasimodo;
@@ -25,6 +44,11 @@ footer
         line-height: rel-size(43px);
         width: rel-size(460px);
         color: #FEFEFE;
+
+        +below(660px)
+            width: 100%;
+            font-size: rel-size(32px);
+            line-height: rel-size(33px);
 
     &__info
         display: flex;
@@ -57,6 +81,9 @@ footer
         display: flex;
         align-items: center;
 
+        +below(440px)
+            flex-wrap: wrap;
+
         a
             margin-left: rel-size(40px);
             font-family: ff-PD;
@@ -67,6 +94,10 @@ footer
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #919191;
             transition: 0.3s;
+
+            +below(660px)
+                margin-right: rel-size(40px);
+                margin-left: 0;
 
             &:hover
                 color: #fff;

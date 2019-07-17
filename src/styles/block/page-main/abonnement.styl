@@ -7,8 +7,14 @@
     position: relative;
     margin-bottom: 60px;
 
+    +below(768px)
+        margin-top: 0;
+
     &__form
         width: rel-size(690px);
+
+        +below(980px)
+            width: 100%;
 
     &__form-title
         font-family: ff-Quasimodo;
@@ -16,6 +22,17 @@
         line-height: rel-size(73px);
         color: #FEFEFE;
         margin-bottom: rel-size(40px);
+
+        +below(768px)
+            font-size: 3.15rem;
+            line-height: 2.65rem;
+
+        +below(580px)
+            font-size: 2.15rem;
+            line-height: 1.65rem;
+
+            br
+                display: none;
 
     &__form-input
         display: flex;
@@ -57,7 +74,8 @@
             display: none;
 
         input:checked + .abonnement__form-checkbox:before
-            background: white;
+            //background: white;
+            background: radial-gradient(circle at center, rgba(255,0,0,1) 40%, rgba(255,0,0,0) 45%);
 
     &__form-checkbox
         font-family: ff-PD;
@@ -92,6 +110,13 @@
         bottom: 0;
         text-align: center;
         padding: 20px
+        z-index: -1;
+
+        +below(1440px)
+            right: 0;
+
+        +below(980px)
+            display: none;
 
         img
             animation: death 20s linear infinite;
