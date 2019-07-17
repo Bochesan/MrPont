@@ -85,30 +85,6 @@ var orderSlider = new Swiper(order,{
       speed: 1500,
     });
 
-
-// window.onresize = function() {
-//     var windowWidth = document.body.clientWidth;
-//     var advantages = document.querySelector('.advantages__slider');
-//
-//     if (windowWidth < 640) {
-//         var advantagesSlider = new Swiper(advantages,{
-//               pagination: {
-//                 el: '.advantages__slider .swiper-pagination',
-//                 clickable: true,
-//               },
-//               autoplay: {
-//                 delay: 2500,
-//               },
-//               speed: 1500,
-//             });
-//     }
-//     else {
-//         advantagesSlider.destroy();
-//     }
-// }
-
-
-
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout
   var breakpoint = window.matchMedia( '(min-width:640px)' );

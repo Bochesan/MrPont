@@ -1,0 +1,38 @@
+.breadcrumbs
+    padding: rel-size(30px) 0;
+
+    &__container
+        display: flex;
+        align-items: center;
+
+    &__item
+        position: relative;
+        padding-right: rel-size(20px);
+        padding-left: 0;
+        margin-right: rel-size(10px);
+        font-family: ff-Quasimodo;
+        font-size: rel-size(14px);
+        line-height: rel-size(16px);
+        color: #919191;
+
+        &:before
+            display: none;
+
+        &:after
+            content: '-';
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: ff-Quasimodo;
+            font-size: rel-size(14px);
+            line-height: rel-size(16px);
+            color: #919191;
+
+        &:last-child:after
+            display: none;
+
+    &__link
+        transition: color 0.3s;
+
+        &:hover
+            color: #fff;
