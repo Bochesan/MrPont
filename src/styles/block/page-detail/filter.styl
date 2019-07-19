@@ -1,0 +1,132 @@
+.detailFilter
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    // border-bottom: 1px solid #3A3A3A;
+    z-index: 10;
+    box-sizing: border-box;
+
+    &:after
+        content: ' ';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #3A3A3A;
+
+    &__popular
+        font-family: ff-Quasimodo;
+        font-size: rel-size(23px);
+        line-height: rel-size(26px);
+        color: #FEFEFE;
+        padding: rel-size(40px) 0 rel-size(40px) 0;
+
+    &__filter-button
+        font-family: ff-Quasimodo;
+        font-size: rel-size(23px);
+        line-height: rel-size(26px);
+        color: #FEFEFE;
+        padding: rel-size(40px) 0 rel-size(40px) 0;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover
+            opacity: 1;
+
+        &.is-active
+            opacity: 1;
+            border-bottom: 4px solid #FEFEFE;
+
+    &__filter
+        display: flex;
+
+    &__filter-container
+        display: flex;
+        margin: 0;
+        padding: rel-size(40px) 0 rel-size(40px) 0;
+
+        li
+            margin: 0 rel-size(15px);
+            padding: 0;
+            font-family: ff-Quasimodo;
+            font-size: rel-size(23px);
+            line-height: rel-size(26px);
+            color: #FEFEFE;
+
+            &:before
+                display: none;
+
+    &__filter-detail
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+.filterDetail
+    width: 100%;
+    background: #111;
+    border-bottom: 1px solid #3A3A3A;
+    z-index: -1;
+
+    &__inner
+        display: flex;
+
+    &__category
+        width: 15rem;
+        border-right: 1px solid #3A3A3A;
+        padding: rel-size(80px) rel-size(20px) rel-size(76px) 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    &__category-title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(31px);
+        line-height: rel-size(27px);
+        color: #919191;
+        margin-bottom: rel-size(40px);
+        display: inline-flex;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:last-child
+            margin-bottom: 0;
+
+        &:hover
+        &.is-active
+            color: #fff;
+
+    &__category-container
+        width: calc(100% - 15rem);
+        position: relative;
+
+    &__detail
+        padding: rel-size(80px) rel-size(20px) rel-size(36px) rel-size(160px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    &__detail-title
+        margin: 0 rel-size(30px) rel-size(38px) 0;
+
+    &__detail-title-text
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(26px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover
+        &.is-active
+            color: #fff;

@@ -10,12 +10,14 @@
         </div>
     </div>
 
-    <h1>Каталог</h1>
+    <div class="wrapper">
+        <h1>Каталог</h1>
+    </div>
 
     <div class="catalog wrapper">
 
         <div class="catalog__box">
-            <a href="#" class="catalog__item">
+            <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
                 </div>
@@ -24,7 +26,7 @@
         </div>
 
         <div class="catalog__box">
-            <a href="#" class="catalog__item">
+            <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
                 </div>
@@ -33,7 +35,7 @@
         </div>
 
         <div class="catalog__box">
-            <a href="#" class="catalog__item">
+            <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
                 </div>
@@ -42,7 +44,7 @@
         </div>
 
         <div class="catalog__box">
-            <a href="#" class="catalog__item">
+            <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
                 </div>
