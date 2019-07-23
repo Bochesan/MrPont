@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer wrapper">
+    <div class="footer wrapper fadeIn">
         <div class="footer__col-1">
             <a href="/" class="footer__logo">
                 <img src="/dist/images/logo.svg" alt="">

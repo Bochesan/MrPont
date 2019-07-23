@@ -19,11 +19,11 @@
     </div>
 
     <div class="have-time wrapper">
-        <div class="section-head">
+        <div class="section-head fadeIn">
             <div class="section-head__title">Успейте<br> приобрести</div>
             <div class="section-head__info">Успейте приобрести</div>
         </div>
-        <div class="have-time__body">
+        <div class="have-time__body fadeIn">
             <!-- <img src="/dist/images/ring.png" alt=""> -->
             <!-- Slider main container -->
             <div class="have-time__slider swiper-container">
@@ -84,17 +84,17 @@
     </div>
 
     <div class="novelty wrapper">
-        <div class="section-head">
+        <div class="section-head fadeIn">
             <div class="section-head__title">Новинки</div>
             <div class="section-head__info">Новинки</div>
         </div>
 
-        <div class="novelty__row">
+        <div class="novelty__row fadeIn">
             <div class="novelty__article">
                 <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
             </div>
-            <div class="novelty__gallery novelty__gallery--1 shadow-name">
+            <div class="novelty__gallery novelty__gallery--1 shadow-name fadeIn">
                 <div class="shadow-name__title">Antique <br> crown</div>
                 <!-- Slider main container -->
                 <div class="novelty__slider novelty__slider--1 swiper-container">
@@ -153,7 +153,7 @@
                 <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
         </div>
-        <div class="novelty__row novelty__row--centered">
+        <div class="novelty__row novelty__row--centered fadeIn">
             <div class="novelty__gallery novelty__gallery--3 shadow-name">
                 <div class="shadow-name__title">Warrior</div>
                 <!-- Slider main container -->
@@ -186,7 +186,7 @@
         </div>
     </div>
 
-    <div class="abonnement wrapper">
+    <div class="abonnement wrapper fadeIn">
         <div class="section-head">
             <div class="section-head__info">Подписка</div>
         </div>
@@ -211,11 +211,11 @@
     </div>
 
     <div class="hits wrapper">
-        <div class="section-head">
+        <div class="section-head fadeIn">
             <div class="section-head__title">Хиты продаж</div>
             <div class="section-head__info">Бестселлеры</div>
         </div>
-        <div class="hits__row hits__row--sb">
+        <div class="hits__row hits__row--sb fadeIn">
             <div class="novelty__article">
                 <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Подробнее</div>
@@ -228,7 +228,7 @@
                 <div class="hits__product-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </a>
         </div>
-        <div class="hits__row hits__row--sb">
+        <div class="hits__row hits__row--sb fadeIn">
             <a href="#" class="hits__product hits__product--2 shadow-name">
                 <div class="hits__product-image">
                     <div class="shadow-name__title">Crosses</div>
@@ -247,12 +247,12 @@
     </div>
 
     <div class="order wrapper">
-        <div class="section-head">
+        <div class="section-head fadeIn">
             <div class="section-head__title">Изделия на заказ</div>
             <div class="section-head__info">Индивидуальные заказы</div>
         </div>
 
-        <div class="order__row">
+        <div class="order__row fadeIn">
             <div class="novelty__article">
                 <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">Заказать</div>
@@ -295,7 +295,7 @@
     </div>
 
     <div class="advantages wrapper">
-        <div class="section-head">
+        <div class="section-head fadeIn">
             <div class="section-head__title">Преимущества</div>
             <div class="section-head__info">Индивидуальные заказы</div>
         </div>
@@ -306,27 +306,27 @@
             </div>
             <div class="advantages__slider swiper-container">
                 <div class="advantages__container swiper-wrapper">
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Бесплатное обслуживание</div>
                         <div class="advantages-box__text">Бесплатное изменение размера изделия (кольцо, перстень, браслет и&nbsp;др.) при покупке. Обслуживание проданных изделий (ремонт, чистка, изменения и&nbsp;др.)</div>
                     </div>
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Собственное производство</div>
                         <div class="advantages-box__text">Собственное производство большинства представленных изделий. Возможность изготовления большинства наших моделей также и&nbsp;в&nbsp;золоте</div>
                     </div>
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Замена вставок</div>
                         <div class="advantages-box__text">Возможность изготовления большинства наших моделей с&nbsp;заменой одних видов вставок (камней) на&nbsp;любые другие</div>
                     </div>
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Высокое качество</div>
                         <div class="advantages-box__text">Высокое качество всех изделий, независимо от&nbsp;цены. Продуманное ценообразование</div>
                     </div>
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Индивидуальные заказы</div>
                         <div class="advantages-box__text">Индивидуальное изготовление изделий по&nbsp;эскизам или идеям заказчика</div>
                     </div>
-                    <div class="swiper-slide advantages-box">
+                    <div class="swiper-slide advantages-box fadeIn">
                         <div class="advantages-box__title">Скидки клиентам</div>
                         <div class="advantages-box__text">Быстрая доставка. Скидки постоянным клиентам</div>
                     </div>

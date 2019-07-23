@@ -10,13 +10,13 @@
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper fadeIn">
         <h1>Каталог</h1>
     </div>
 
     <div class="catalog wrapper">
 
-        <div class="catalog__box">
+        <div class="catalog__box fadeIn">
             <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
@@ -25,7 +25,7 @@
             </a>
         </div>
 
-        <div class="catalog__box">
+        <div class="catalog__box fadeIn">
             <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
@@ -34,7 +34,7 @@
             </a>
         </div>
 
-        <div class="catalog__box">
+        <div class="catalog__box fadeIn">
             <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
@@ -43,7 +43,7 @@
             </a>
         </div>
 
-        <div class="catalog__box">
+        <div class="catalog__box fadeIn">
             <a href="/page-detail.php" class="catalog__item">
                 <div class="catalog__image">
                     <img src="/dist/images/ring.png" alt="">
