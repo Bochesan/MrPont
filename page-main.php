@@ -300,7 +300,7 @@
             <div class="section-head__info">Индивидуальные заказы</div>
         </div>
         <div class="advantages__row advantages__row--sb">
-            <div class="novelty__article">
+            <div class="novelty__article fadeIn">
                 <div class="novelty__article-text">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
                 <div class="novelty__article-button button button--dark">О нас</div>
             </div>
