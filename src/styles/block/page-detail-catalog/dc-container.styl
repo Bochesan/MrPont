@@ -2,14 +2,15 @@
     padding-top: rel-size(50px);
     padding-bottom: rel-size(100px);
 
+    +below(768px)
+        padding-top: 0;
+        padding-bottom: rel-size(100px);
+
 .dc-container
     margin: 0;
-    // display: flex;
-    // flex-wrap: wrap;
     font-size: 0;
 
     &__box
-        //background: #202020;
         display: inline-block;
         border: 1px solid #3A3A3A;
         position: relative;
@@ -17,15 +18,51 @@
         width: 23%;
         margin: 1%;
 
+        +below(980px)
+            width: 48%;
+            padding-top: 52.1%;
+
+        +below(768px)
+            padding-top: 75%;
+            margin: 1.5% 1%;
+
+        +below(359px)
+            width: 98%;
+
+        &:before
+            content: ' ';
+            width: 105%;
+            height: 102.5%;
+            position: absolute;
+            top: -2.5%;
+            left: -2.5%;
+            background: white;
+            opacity: 0;
+            transition: 0s;
+            z-index: -1;
+
         &:first-child
             width: 48%;
             float: left;
             padding-top: 52.1%;
 
+            +below(768px)
+                width: 98%;
+                padding-top: 98%;
+
+            &:before
+                display: none;
+
             .dc-container__box-info
+                left: 0%;
+                width: 100%;
+                min-height: 0;
+                height: 0;
+                opacity: 1;
                 top: auto;
                 bottom: 0;
                 padding: 0 rel-size(40px);
+                transition: 0.75s;
 
             .dc-container__box-info-row
                 margin-bottom: rel-size(15px);
@@ -39,36 +76,26 @@
                     height: 50%;
 
                 .dc-container__box-info
+                    min-height: 50%;
                     height: 50%;
                     padding: rel-size(40px);
 
-        // &:before
-        //     content: '';
-        //     width: 0%;
-        //     height: 0%;
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     background: white;
-        //     z-index: -1;
-        //     transition: 0.3s;
-
         &:hover
+            background: #202020;
+
+            &:before
+                opacity: 1;
+                transition: 0.5s;
 
             .dc-container__box-info
-                height: 60%;
+                height: auto;
+                min-height: 60%;
+                opacity: 1;
                 padding: rel-size(20px);
 
-            // &:before
-            //     content: '';
-            //     width: 102%;
-            //     height: 162%;
-            //     position: absolute;
-            //     top: -1%;
-            //     left: -1%;
-            //     background: white;
-            //     z-index: -1;
-
+                +below(768px)
+                    min-height: 40%;
+                    padding: rel-size(10px);
 
     &__box-preview
         position: absolute;
@@ -82,6 +109,9 @@
         justify-content: space-between;
         transition: 0.75s;
 
+        +below(768px)
+            padding: rel-size(15px);
+
     &__box-title
     &__box-price
         font-family: ff-Quasimodo;
@@ -89,6 +119,15 @@
         line-height: rel-size(37px);
         color: #FEFEFE;
         height: 5rem;
+
+        +below(1560px)
+            font-size: rel-size(28px);
+            line-height: rel-size(27px);
+
+        +below(1240px)
+            font-size: rel-size(22px);
+            line-height: rel-size(21px);
+            height: 3rem;
 
     &__box-price
         height: 2rem;
@@ -98,6 +137,9 @@
         align-items: center;
         justify-content: center;
         height: calc(100% - 7rem);
+
+        +below(1240px)
+            height: calc(100% - 5rem);
 
         img
             display: block;
@@ -110,13 +152,28 @@
         position: absolute;
         bottom: auto;
         top: 100%;
-        left: 0;
+        left: -2.5%;
         z-index: 10;
-        width: 100%;
+        width: 105%;
         height: 0;
+        min-height: 0;
         overflow: hidden;
         transition: 0.75s;
-        padding: 0 rel-size(20px);
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.5s, height 0.5s;
+
+        +below(768px)
+
+            .button
+                font-size: rel-size(18px);
+                line-height: rel-size(17px);
+                min-width: 0;
+                min-height: 0;
+                width: 100%;
+                height: auto;
+                margin-bottom: 0;
+                margin-top: rel-size(10px);
 
     &__box-info-row
         margin-bottom: rel-size(5px);
@@ -131,6 +188,11 @@
         line-height: rel-size(34px);
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #202020;
+
+        +below(768px)
+            display: inline;
+            font-size: rel-size(14px);
+            line-height: rel-size(17px);
 
     &__box-info-title
         margin-right: 5px;

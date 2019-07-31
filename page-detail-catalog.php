@@ -127,7 +127,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -140,7 +152,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -153,7 +177,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -166,7 +202,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -179,7 +227,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -192,7 +252,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -205,7 +277,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -218,7 +302,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
 
@@ -231,7 +327,19 @@
                     <div class="dc-container__box-price">4 200 р</div>
                 </div>
                 <div class="dc-container__box-info">
-
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Состав:</span>
+                        <span class="dc-container__box-info-text">Серебро 925 (глубокое чернение)</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Вес,гр:</span>
+                        <span class="dc-container__box-info-text">4</span>
+                    </div>
+                    <div class="dc-container__box-info-row">
+                        <span class="dc-container__box-info-title">Размеры:</span>
+                        <span class="dc-container__box-info-text">16, 16.5, 17, 19.5, 20</span>
+                    </div>
+                    <button class="button button--black">В корзину</button>
                 </div>
             </div>
         </div>
