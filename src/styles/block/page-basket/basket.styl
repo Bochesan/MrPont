@@ -1,0 +1,91 @@
+.product
+    max-height: 1000px;
+    border-top: 1px solid #3A3A3A;
+
+    &__container
+        padding-top: rel-size(40px);
+        padding-bottom: rel-size(40px);
+        display: flex;
+
+    &:last-child
+        border-bottom: 1px solid #3A3A3A;
+
+    &__image
+        width: rel-size(160px);
+        height: @width;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: rel-size(120px);
+
+        img
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            object-position: center;
+
+    &__title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(40px);
+
+    &__selects
+        display: flex;
+        flex-wrap: wrap;
+
+    &__select
+        margin-right: rel-size(20px);
+        margin-bottom: rel-size(20px);
+
+    &__select-name
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        margin-bottom: rel-size(10px);
+
+    &__select-value
+        background: transparent;
+        min-width: rel-size(160px);
+        height: rel-size(70px);
+        border: 1px solid #919191;
+        padding: rel-size(20px) rel-size(60px) rel-size(20px) rel-size(20px);
+        appearance: none;
+        cursor: pointer;
+        background: url('/dist/images/dropdown-icon.svg') calc(100% - 30px) center no-repeat;
+
+        option
+            background: #1a1a1a;
+            outline: none;
+            cursor: pointer;
+
+        &:focus
+            border: 1px solid #919191;
+            outline: none;
+
+    &__price
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-left: auto;
+        margin-right: rel-size(120px);
+
+    &__delete
+        cursor: pointer;
+
+/* Add class for delete animation */
+.deleteAnim
+    transition: max-height 0.75s;
+    max-height: 0;
+    overflow: hidden;
+
+    & > div
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        transform: scale(0.9);
+        opacity: 0;
