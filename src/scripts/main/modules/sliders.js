@@ -69,6 +69,24 @@ var noveltySlider3 = new Swiper(novelty3,{
       speed: 1500,
     });
 
+var detail = document.querySelector('.detail__slider');
+var detailSlider = new Swiper(detail,{
+      pagination: {
+        el: '.detail__slider .swiper-pagination',
+        clickable: true,
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      autoplay: {
+        delay: 3500,
+      },
+      speed: 1500,
+    });
+
+
+
 var order = document.querySelector('.order__slider');
 var orderSlider = new Swiper(order,{
       pagination: {
