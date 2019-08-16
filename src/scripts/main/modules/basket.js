@@ -20,7 +20,17 @@ DeleteProduct.prototype.del = function() {
     this._self.classList.add('deleteAnim');
     setTimeout(function() {
         self._self.remove();
+
+        /* Если продуктов в корзине не осталось создаем ссылку возврата */
+        if (!document.querySelectorAll('.product').length) {
+            var message = document.createElement('a');
+            message.className = 'wrapper backToMain';
+            message.innerHTML = 'Вернуться на главную';
+            message.setAttribute('href', '/');
+            document.querySelector('.products').appendChild(message);
+        }
     }, 750)
+
 }
 
 var productArr = document.querySelectorAll('.product');
