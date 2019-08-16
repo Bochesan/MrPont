@@ -1,3 +1,6 @@
+.orderForm
+    padding-bottom: rel-size(180px);
+    
 .product
     max-height: 1000px;
     border-top: 1px solid #3A3A3A;
@@ -81,6 +84,33 @@
         cursor: pointer;
         align-self: flex-start;
 
+    &__sum
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        padding-top: rel-size(60px);
+        padding-bottom: rel-size(60px);
+        border-top: 1px solid #3a3a3a;
+
+    &__sum-title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-right: rel-size(80px);
+
+    &__sum-price
+        font-family: ff-Quasimodo;
+        font-size: rel-size(83px);
+        line-height: rel-size(73px);
+        color: #FEFEFE;
+
+        input
+            // border: none;
+            background: transparent;
+
+
+
 /* Add class for delete animation */
 .deleteAnim
     transition: max-height 0.75s;
@@ -91,12 +121,44 @@
         transition: transform 0.5s ease-out, opacity 0.5s ease-out;
         transform: scale(0.9);
         opacity: 0;
+/* Add class for delete animation */
+
+
 
 .backToMain
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-family: ff-Quasimodo;
-    font-size: rel-size(62px);
-    line-height: rel-size(63px);
+    font-size: 0;
+    line-height: 0;
     color: #FEFEFE;
-    margin-top: rel-size(50px);
-    margin-bottom: rel-size(50px);
+    opacity: 0;
+    height: 0;
+    animation: slideDown 1s 0.5s linear forwards;
+
+@keyframes slideDown {
+    0%,10% {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+    50% {
+        height: 200px;
+        opacity: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+    51% {
+        overflow: visible;
+        font-size: 62px;
+        line-height: 63px;
+    }
+    100% {
+        height: 200px;
+        opacity: 1;
+        font-size: 62px;
+        line-height: 63px;
+    }
+}

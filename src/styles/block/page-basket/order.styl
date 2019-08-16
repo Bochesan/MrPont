@@ -1,0 +1,143 @@
+.red
+    color: red;
+
+.order
+
+    &__section
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+    &__label
+        width: rel-size(400px);
+        margin-right: rel-size(20px);
+        margin-bottom: rel-size(60px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--small
+            width: rel-size(120px);
+
+        &--textarea
+            width: auto;
+
+    &__input-title
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+        margin-bottom: rel-size(20px);
+
+    &__input
+        width: 100%;
+        background: transparent;
+        border: 1px solid #919191;
+        padding: 0 rel-size(20px);
+        height: rel-size(70px);
+        transition: border 0.3s;
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FEFEFE;
+
+        &:focus
+            border: 1px solid #FEFEFE;
+            outline: none;
+
+    &__input--select
+    & .select2-selection
+        background: transparent;
+        min-width: rel-size(160px);
+        height: rel-size(70px);
+        border: 1px solid #919191;
+        border-radius: 0;
+        padding: rel-size(20px) rel-size(60px) rel-size(20px) rel-size(20px);
+        appearance: none;
+        cursor: pointer;
+        background: url('/dist/images/dropdown-icon.svg') calc(100% - 30px) center no-repeat;
+
+        option
+            background: #1a1a1a;
+            outline: none;
+            cursor: pointer;
+
+        &:focus
+            border: 1px solid #919191;
+            outline: none;
+
+    & .select2-container--default .select2-selection--single .select2-selection__rendered
+        color: #FEFEFE;
+
+    & .select2-selection__arrow
+        display: none;
+
+    &__input-info
+        margin-top: rel-size(20px);
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FEFEFE;
+
+        &--link
+            color: #919191;
+            text-decoration: underline;
+
+            &:hover
+                text-decoration: none;
+
+    &__textarea
+        resize: vertical;
+        background: transparent;
+        max-width: rel-size(540px);
+        width: 100%;
+        min-height: rel-size(220px);
+        border: 1px solid #919191;
+        padding: 0 rel-size(20px);
+        transition: border 0.3s;
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FEFEFE;
+
+        &:focus
+            border: 1px solid #FEFEFE;
+            outline: none;
+
+.orderPrice
+    margin-bottom: rel-size(54px);
+    font-family: ff-Quasimodo;
+    font-size: rel-size(83px);
+    line-height: rel-size(73px);
+    color: #FEFEFE;
+
+    &__title
+        display: inline-block;
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-right: rel-size(40px);
+
+.select2-dropdown
+    background: #1a1a1a;
+
+.select2-container--default .select2-results__option
+    padding-left: 30px;
+    padding-right: 30px;
+
+.select2-container--default .select2-results__option[aria-selected=true]
+    background: transparent;
+    cursor: default;

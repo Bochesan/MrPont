@@ -9,7 +9,7 @@
             </ul>
         </div>
     </div>
-    <form action="">
+    <form action="" class="orderForm">
 
         <div class="products">
 
@@ -25,7 +25,7 @@
                         <div class="product__selects">
                             <div class="product__select">
                                 <div class="product__select-name">Кол-во</div>
-                                <select class="product__select-value" name="">
+                                <select class="product__select-value product__select-value--number" name="">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -66,7 +66,7 @@
                         <div class="product__selects">
                             <div class="product__select">
                                 <div class="product__select-name">Кол-во</div>
-                                <select class="product__select-value" name="">
+                                <select class="product__select-value product__select-value--number" name="">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -107,7 +107,7 @@
                         <div class="product__selects">
                             <div class="product__select">
                                 <div class="product__select-name">Кол-во</div>
-                                <select class="product__select-value" name="">
+                                <select class="product__select-value product__select-value--number" name="">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -135,8 +135,89 @@
                     </div>
                 </div>
             </div>
+
+            <div class="product__sum wrapper">
+                <div class="product__sum-title">Стоимость:</div>
+                <div class="product__sum-price">
+                    <span class="product__sum-value">0</span>
+                    <span>р</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="order wrapper">
+            <div class="section-head">
+                <div class="section-head__title">Оформление</div>
+            </div>
+
+            <div class="order__section">
+                <label class="order__label">
+                    <span class="order__input-title">ФИО <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label">
+                    <span class="order__input-title">E-mail <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label">
+                    <span class="order__input-title">Телефон <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input phoneMask">
+                </label>
+                <label class="order__label">
+                    <span class="order__input-title">Доставка <span class="red">*</span></span>
+                    <select name="" class="order__input order__input--select">
+                        <option value="0">Самовывоз</option>
+                        <option value="1">Доставка</option>
+                    </select>
+                    <span class="order__input-info">+600 р</span>
+                    <a href="#" class="order__input-info order__input-info--link">О доставке</a>
+                </label>
+            </div>
+
+            <div class="order__section">
+                <label class="order__label">
+                    <span class="order__input-title">Населенный пункт <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label">
+                    <span class="order__input-title">Улица <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label order__label--small">
+                    <span class="order__input-title">Дом <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label order__label--small">
+                    <span class="order__input-title">Подъезд <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label order__label--small">
+                    <span class="order__input-title">Этаж <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+                <label class="order__label order__label--small">
+                    <span class="order__input-title">Квартира <span class="red">*</span></span>
+                    <input type="text" name="" value="" class="order__input">
+                </label>
+            </div>
+
+            <label class="order__label order__label--textarea">
+                <span class="order__input-title">Комментарий (код домофона и тд)</span>
+                <textarea name="" class="order__textarea"></textarea>
+            </label>
 
         </div>
+
+        <div class="orderPrice wrapper">
+            <span class="orderPrice__title">Итого:</span>
+            <span class="orderPrice__price--value">0</span>
+            <span>р</span>
+        </div>
+
+        <div class="order__submit wrapper">
+            <button class="button">Оформить</button>
+        </div>
+
 
     </form>
 </main>

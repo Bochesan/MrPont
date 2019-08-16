@@ -1,4 +1,4 @@
-<footer class="fadeIn">
+<footer>
     <div class="footer wrapper">
         <div class="footer__col-1">
             <a href="/" class="footer__logo">
@@ -26,6 +26,7 @@
 </div>
 <script src="/dist/js/vendor.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
 <script src="/dist/js/main.min.js"></script>
 </body>
 </html>
