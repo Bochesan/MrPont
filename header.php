@@ -49,7 +49,7 @@
                                     <path d="M14.5 14.5L19.5 19.5" stroke="#E1E1E1"/>
                                 </svg>
                             </span>
-                            <span class="header__basket">Корзина(0)</span>
+                            <a href="/page-basket.php" class="header__basket">Корзина(0)</a>
                         </div>
                     </div>
                 </div>
