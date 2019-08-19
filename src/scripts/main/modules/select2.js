@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var orderSelect = $('.order__input--select');
-    if (orderSelect.length) {
+    if (orderSelect) {
         orderSelect.select2({
             minimumResultsForSearch: Infinity
         });

@@ -3,10 +3,13 @@
 
 .order
 
+    .select2-container
+        width: 100% !important;
+
     &__section
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-end;
+        align-items: flex-start;
 
     &__label
         width: rel-size(400px);
@@ -16,8 +19,30 @@
         flex-direction: column;
         align-items: flex-start;
 
+        +below(1400px)
+            width: 31.33%;
+            margin-right: 2%;
+
+        +below(768px)
+            width: 48%;
+            margin-right: 4%;
+
+            &:nth-child(2n)
+                margin-right: 0;
+
+        +below(580px)
+            width: 100%;
+            margin: 0 0 rel-size(30px) 0;
+
         &--small
             width: rel-size(120px);
+
+            +below(768px)
+                width: 48%;
+                margin-right: 4%;
+
+                &:nth-child(2n)
+                    margin-right: 0;
 
         &--textarea
             width: auto;
@@ -112,6 +137,9 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FEFEFE;
 
+        +below(768px)
+            max-width: none;
+
         &:focus
             border: 1px solid #FEFEFE;
             outline: none;
@@ -123,6 +151,10 @@
     line-height: rel-size(73px);
     color: #FEFEFE;
 
+    +below(580px)
+        font-size: rel-size(63px);
+        line-height: rel-size(53px);
+
     &__title
         display: inline-block;
         font-family: ff-Quasimodo;
@@ -130,6 +162,9 @@
         line-height: rel-size(43px);
         color: #FEFEFE;
         margin-right: rel-size(40px);
+
+        +below(580px)
+            margin-right: 0;
 
 .select2-dropdown
     background: #1a1a1a;

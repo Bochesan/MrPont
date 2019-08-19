@@ -1,6 +1,6 @@
 .orderForm
     padding-bottom: rel-size(180px);
-    
+
 .product
     max-height: 1000px;
     border-top: 1px solid #3A3A3A;
@@ -9,6 +9,10 @@
         padding-top: rel-size(40px);
         padding-bottom: rel-size(40px);
         display: flex;
+        position: relative;
+
+        +below(768px)
+            flex-direction: column;
 
     &:last-child
         border-bottom: 1px solid #3A3A3A;
@@ -22,6 +26,13 @@
         margin-right: rel-size(120px);
         user-select: none;
 
+        +below(1080px)
+            margin-right: rel-size(20px);
+
+        +below(768px)
+            margin-right: 0;
+            margin-bottom: rel-size(15px);
+
         img
             width: 160px;
             height: 160px;
@@ -34,6 +45,10 @@
         line-height: rel-size(43px);
         color: #FEFEFE;
         margin-bottom: rel-size(40px);
+
+        +below(768px)
+            br
+                display: none;
 
     &__selects
         display: flex;
@@ -80,9 +95,21 @@
         margin-left: auto;
         margin-right: rel-size(120px);
 
+        +below(1080px)
+            margin-right: rel-size(20px);
+
+        +below(768px)
+            margin-right: 0;
+            margin-left: 0;
+
     &__delete
         cursor: pointer;
         align-self: flex-start;
+
+        +below(768px)
+            position: absolute;
+            top: rel-size(30px);
+            right: rel-size(30px);
 
     &__sum
         display: flex;
@@ -92,6 +119,10 @@
         padding-bottom: rel-size(60px);
         border-top: 1px solid #3a3a3a;
 
+        +below(768px)
+            justify-content: flex-start;
+            padding-top: rel-size(20px);
+
     &__sum-title
         font-family: ff-Quasimodo;
         font-size: rel-size(42px);
@@ -99,11 +130,18 @@
         color: #FEFEFE;
         margin-right: rel-size(80px);
 
+        +below(580px)
+            margin-right: rel-size(20px);
+
     &__sum-price
         font-family: ff-Quasimodo;
         font-size: rel-size(83px);
         line-height: rel-size(73px);
         color: #FEFEFE;
+
+        +below(580px)
+            font-size: rel-size(63px);
+            line-height: rel-size(53px);
 
         input
             // border: none;
