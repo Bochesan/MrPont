@@ -25,7 +25,6 @@ if (haveTime) {
 
 
 var novelty1 = document.querySelector('.novelty__slider--1');
-console.log(novelty1);
 if (novelty1) {
     var noveltySlider1 = new Swiper(novelty1,{
       pagination: {

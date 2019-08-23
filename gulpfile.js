@@ -104,4 +104,4 @@ exports.cleanImg = cleanOptionImages;
 exports.cleanAll = gulp.series(cleanJsCss, cleanOptionImages);
 exports.optimImg = optimizationImages;
 exports.build = gulp.parallel(cssBuild, jsBuild, optimizationImages);
-exports.default = gulp.series(exports.build, browserSyncInit, watchFiles);
+exports.default = gulp.series(exports.cleanAll, exports.build, browserSyncInit, watchFiles);
