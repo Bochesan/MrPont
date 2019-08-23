@@ -3,11 +3,30 @@
     padding-top: rel-size(30px);
     padding-bottom: rel-size(30px);
 
+    +below(768px)
+        flex-wrap: wrap;
+
     &__info
         flex: 1 1 auto;
+        padding-right: rel-size(30px);
+
+        +below(768px)
+            flex: none;
+            width: 100%;
+            padding: 0;
+            margin-bottom: rel-size(30px);
+
+        a
+            transition: color 0.3s;
+
+            &:hover
+                color: #fff;
 
     &__info-container
         margin-bottom: rel-size(40px);
+
+        +below(768px)
+            text-align: center;
 
     &__info-title
         font-family: ff-Quasimodo;
@@ -28,3 +47,16 @@
 
     &__map
         flex: 3 1 100%;
+        position: relative;
+
+        +below(768px)
+            padding-top: 76%;
+            width: 100%;
+            flex: none;
+
+#map
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;

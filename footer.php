@@ -27,6 +27,7 @@
 <script src="/dist/js/vendor.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 <script src="/dist/js/main.min.js"></script>
 </body>
 </html>
