@@ -1,0 +1,31 @@
+.nf
+    height: 100%;
+    background: url('/dist/images/404.jpg') center center no-repeat;
+    background-size: cover;
+
+    &__container
+        padding-top: rel-size(40px);
+        padding-bottom: rel-size(170px);
+
+        +below(940px)
+            padding-top: rel-size(40px);
+            padding-bottom: rel-size(100px);
+
+        +below(768px)
+            padding-top: rel-size(30px);
+            padding-bottom: rel-size(50px);
+
+    &__title
+    &__text
+        font-family: ff-Quasimodo;
+        font-size: rel-size(83px);
+        line-height: rel-size(73px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(40px);
+
+        +below(768px)
+            font-size: rel-size(53px);
+            line-height: rel-size(43px);
+
+    &__text
+        margin-bottom: rel-size(60px);
