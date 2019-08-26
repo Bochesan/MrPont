@@ -1,0 +1,68 @@
+.delivery
+
+    &__row
+
+        &--sb
+            display: flex;
+            justify-content: space-between;
+
+            +below(1240px)
+                flex-wrap: wrap;
+
+        .novelty__article
+            width: 300px;
+            flex: none;
+
+            +below(1240px)
+                width: 100%;
+
+            +below(768px)
+                margin-bottom: 0;
+
+    &__container
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        height: auto;
+
+    &__info
+        padding-top: 7%;
+
+        +below(1240px)
+            padding-top: 0;
+
+        +below(640px)
+            margin-bottom: rel-size(30px);
+
+.delivery-box
+    width: 48%;
+    margin: 0 4% rel-size(80px) 0;
+
+    +below(768px)
+        width: 100%;
+        margin: 0 0 rel-size(50px);
+
+    // +below(640px)
+    //     margin: 0;
+
+    &:nth-child(2n)
+        margin-right: 0;
+
+    &__title
+        font-family: ff-Quasimodo;
+        font-size: rel-size(42px);
+        line-height: rel-size(43px);
+        color: #FEFEFE;
+        margin-bottom: rel-size(20px);
+
+    &__text
+        font-family: ff-PD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rel-size(18px);
+        line-height: rel-size(34px);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #919191;
+
+        &--primary
+            color: #fff;

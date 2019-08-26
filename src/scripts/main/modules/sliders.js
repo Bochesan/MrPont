@@ -118,6 +118,24 @@ if (order) {
     });
 }
 
+var about = document.querySelector('.about__slider');
+if (about) {
+    var aboutSlider = new Swiper(about,{
+      pagination: {
+        el: '.about__slider .swiper-pagination',
+        clickable: true,
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      autoplay: {
+        delay: 2500,
+      },
+      speed: 1500,
+    });
+}
+
 if (document.querySelector('.advantages__slider')) {
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout

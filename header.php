@@ -53,7 +53,7 @@
                         <ul class="header__nav-container">
                             <li class="header__nav-item"><a href="/" class="header__nav-link" data-name="Главная">Главная</a></li>
                             <li class="header__nav-item"><a href="/page-catalog.php" class="header__nav-link" data-name="Каталог">Каталог</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link" data-name="О нас">О нас</a></li>
+                            <li class="header__nav-item"><a href="/page-about.php" class="header__nav-link" data-name="О нас">О нас</a></li>
                             <li class="header__nav-item"><a href="/page-contacts.php" class="header__nav-link" data-name="Контакты">Контакты</a></li>
                         </ul>
                         <div class="header__nav-footer">

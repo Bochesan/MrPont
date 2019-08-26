@@ -24,7 +24,6 @@
             <div class="section-head__info">Успейте приобрести</div>
         </div>
         <div class="have-time__body fadeIn">
-            <!-- <img src="/dist/images/ring.png" alt=""> -->
             <!-- Slider main container -->
             <div class="have-time__slider swiper-container">
                 <!-- Additional required wrapper -->
