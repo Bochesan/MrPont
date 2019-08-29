@@ -7,3 +7,4 @@ import * as basket from './modules/basket';
 import * as select2 from './modules/select2';
 import * as mask from './modules/mask';
 import * as map from './modules/map';
+import * as filter from './modules/filter';

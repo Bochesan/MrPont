@@ -15,17 +15,17 @@
         <h1>Кольца и перстни</h1>
     </div>
 
-    <!-- <div class="detailFilter wrapper">
+    <div class="detailFilter wrapper">
         <div class="detailFilter__popular">По популярности</div>
         <div class="detailFilter__filter">
             <ul class="detailFilter__filter-container">
-                <li>500 - 2000 руб</li>
+                <!-- <li>500 - 2000 руб</li>
                 <li>Сапфир</li>
-                <li>Изумруд</li>
+                <li>Изумруд</li> -->
             </ul>
             <div class="detailFilter__filter-button">Фильтры</div>
         </div>
-        <div class="detailFilter__filter-detail filterDetail wrapper">
+        <form class="detailFilter__filter-detail filterDetail wrapper">
             <div class="filterDetail__inner">
                 <div class="filterDetail__category">
                     <div class="filterDetail__category-title" data-index="1">Цена</div>
@@ -35,35 +35,43 @@
                 </div>
                 <div class="filterDetail__category-container">
                     <div class="filterDetail__detail" data-index='2'>
-                        <div class="filterDetail__detail-title">
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Сапфир</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Золото</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Измуруд</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Серебро</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Оникс</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Эмаль</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Сапфир</span>
-                        </div>
-                        <div class="filterDetail__detail-title">
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Черный бриллиант</span>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </form>
+    </div>
 
     <div class="detail-catalog wrapper">
         <div class="dc-container">
