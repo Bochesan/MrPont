@@ -15,13 +15,13 @@
         <h1>Кольца и перстни</h1>
     </div>
 
-    <div class="detailFilter wrapper">
+    <!-- <div class="detailFilter wrapper">
         <div class="detailFilter__popular">По популярности</div>
         <div class="detailFilter__filter">
             <ul class="detailFilter__filter-container">
-                <!-- <li>500 - 2000 руб</li>
+                <li>500 - 2000 руб</li>
                 <li>Сапфир</li>
-                <li>Изумруд</li> -->
+                <li>Изумруд</li>
             </ul>
             <div class="detailFilter__filter-button">Фильтры</div>
         </div>
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </form>
-    </div>
+    </div> -->
 
     <div class="detail-catalog wrapper">
         <div class="dc-container">
