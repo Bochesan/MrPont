@@ -15,13 +15,13 @@
         <h1>Кольца и перстни</h1>
     </div>
 
-    <!-- <div class="detailFilter wrapper">
+    <div class="detailFilter wrapper">
         <div class="detailFilter__popular">По популярности</div>
         <div class="detailFilter__filter">
             <ul class="detailFilter__filter-container">
-                <li>500 - 2000 руб</li>
+                <!-- <li>500 - 2000 руб</li>
                 <li>Сапфир</li>
-                <li>Изумруд</li>
+                <li>Изумруд</li> -->
             </ul>
             <div class="detailFilter__filter-button">Фильтры</div>
         </div>
@@ -34,7 +34,41 @@
                     <div class="filterDetail__category-title" data-index='4'>Размер</div>
                 </div>
                 <div class="filterDetail__category-container">
-                    <div class="filterDetail__detail" data-index='2'>
+                    <div class="filterDetail__detail" data-index='1'>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Золото1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Измуруд1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Серебро1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Оникс1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Эмаль1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир1</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Черный бриллиант1</span>
+                        </label>
+                    </div>
+                    <div class="filterDetail__detail is-active" data-index='2'>
                         <label class="filterDetail__detail-title">
                             <input type="checkbox">
                             <span class="filterDetail__detail-title-text">Сапфир</span>
@@ -68,10 +102,78 @@
                             <span class="filterDetail__detail-title-text">Черный бриллиант</span>
                         </label>
                     </div>
+                    <div class="filterDetail__detail" data-index='3'>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Золото3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Измуруд3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Серебро3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Оникс3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Эмаль3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир3</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Черный бриллиант3</span>
+                        </label>
+                    </div>
+                    <div class="filterDetail__detail" data-index='4'>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Золото4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Измуруд4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Серебро4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Оникс4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Эмаль4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Сапфир4</span>
+                        </label>
+                        <label class="filterDetail__detail-title">
+                            <input type="checkbox">
+                            <span class="filterDetail__detail-title-text">Черный бриллиант4</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </form>
-    </div> -->
+    </div>
 
     <div class="detail-catalog wrapper">
         <div class="dc-container">
