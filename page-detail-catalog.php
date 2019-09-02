@@ -15,7 +15,7 @@
         <h1>Кольца и перстни</h1>
     </div>
 
-    <div class="detailFilter wrapper">
+    <form class="detailFilter wrapper">
         <div class="detailFilter__popular">По популярности</div>
         <div class="detailFilter__filter">
             <ul class="detailFilter__filter-container">
@@ -25,7 +25,7 @@
             </ul>
             <div class="detailFilter__filter-button">Фильтры</div>
         </div>
-        <form class="detailFilter__filter-detail filterDetail wrapper">
+        <div class="detailFilter__filter-detail filterDetail wrapper">
             <div class="filterDetail__inner">
                 <div class="filterDetail__category">
                     <div class="filterDetail__category-title" data-index="1">Цена</div>
@@ -172,8 +172,8 @@
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 
     <div class="detail-catalog wrapper">
         <div class="dc-container">

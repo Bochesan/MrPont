@@ -69,6 +69,15 @@
     background: #111;
     border-bottom: 1px solid #3A3A3A;
     z-index: -1;
+    background: url(/dist/images/background.jpg) left top;
+    background-size: 130px 130px;
+    transition: opacity 0.5s;
+    height: 0;
+    overflow: hidden;
+
+    &.is-active
+        height: auto;
+        opacity: 1;
 
     &__inner
         display: flex;
@@ -88,6 +97,7 @@
         color: #919191;
         margin-bottom: rel-size(40px);
         display: inline-flex;
+        align-items: center;
         cursor: pointer;
         transition: color 0.3s;
 
@@ -101,6 +111,15 @@
     &__category-container
         width: calc(100% - 15rem);
         position: relative;
+
+    &__category-title--clear
+        display: block;
+        width: rel-size(10px);
+        height: @width;
+        background: url('/dist/images/clear.svg') center center no-repeat;
+        background-size: contain;
+        margin-left: rel-size(15px);
+        cursor: pointer;
 
     &__detail
         padding: rel-size(80px) rel-size(20px) rel-size(36px) rel-size(160px);
