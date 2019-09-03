@@ -1,20 +1,15 @@
 .detailFilter
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
-    // border-bottom: 1px solid #3A3A3A;
     z-index: 10;
     box-sizing: border-box;
+    background: url("/dist/images/background.jpg") left top;
+    background-size: 130px 130px;
 
-    &:after
-        content: ' ';
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: #3A3A3A;
+    &__head
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #3A3A3A;
 
     &__popular
         font-family: ff-Quasimodo;
@@ -23,7 +18,7 @@
         color: #FEFEFE;
         padding: rel-size(40px) 0 rel-size(40px) 0;
 
-    &__filter-button
+    &__filterButton
         font-family: ff-Quasimodo;
         font-size: rel-size(23px);
         line-height: rel-size(26px);
@@ -43,7 +38,7 @@
     &__filter
         display: flex;
 
-    &__filter-container
+    &__filterDisplay
         display: flex;
         margin: 0;
         padding: rel-size(40px) 0 rel-size(40px) 0;
@@ -59,60 +54,52 @@
             &:before
                 display: none;
 
-    &__filter-detail
-        position: absolute;
-        top: 100%;
-        left: 0;
-
 .filterDetail
     width: 100%;
-    background: #111;
     border-bottom: 1px solid #3A3A3A;
     z-index: -1;
-    background: url(/dist/images/background.jpg) left top;
+    background: url("/dist/images/background.jpg") left top;
     background-size: 130px 130px;
     transition: opacity 0.5s;
     height: 0;
     overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__inner
+        padding: rel-size(80px) 0;
+        width: 15rem;
+        border-right: 1px solid #3A3A3A;
 
     &.is-active
         height: auto;
         opacity: 1;
 
-    &__inner
-        display: flex;
-
     &__category
-        width: 15rem;
-        border-right: 1px solid #3A3A3A;
-        padding: rel-size(80px) rel-size(20px) rel-size(76px) 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-bottom: rel-size(40px);
 
-    &__category-title
+        &:last-child
+            margin-bottom: 0;
+
+    &__categoryTitle
         font-family: ff-Quasimodo;
         font-size: rel-size(31px);
         line-height: rel-size(27px);
         color: #919191;
-        margin-bottom: rel-size(40px);
         display: inline-flex;
         align-items: center;
         cursor: pointer;
         transition: color 0.3s;
 
-        &:last-child
-            margin-bottom: 0;
-
         &:hover
         &.is-active
             color: #fff;
 
-    &__category-container
-        width: calc(100% - 15rem);
-        position: relative;
-
-    &__category-title--clear
+    &__categoryTitle--clear
         display: block;
         width: rel-size(10px);
         height: @width;
@@ -121,23 +108,34 @@
         margin-left: rel-size(15px);
         cursor: pointer;
 
-    &__detail
-        padding: rel-size(80px) rel-size(20px) rel-size(36px) rel-size(160px);
+    &__categoryContainer
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: calc(100% - 15rem - 4%);
         height: 100%;
-        // display: flex;
+        padding: rel-size(80px) rel-size(160px) rel-size(40px);
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         display: none;
 
-        &.is-active
+    &__category
+
+        .filterDetail__categoryContainer
+            display: none;
+
+    &__category.is-active
+
+        .filterDetail__categoryContainer
             display: flex;
 
-    &__detail-title
-        margin: 0 rel-size(30px) rel-size(38px) 0;
+        .filterDetail__categoryTitle
+            opacity: 1;
+            color: #fff;
+
+    &__label
+        margin: 0 rel-size(30px) rel-size(40px) 0;
 
         input
             display: none;
@@ -145,7 +143,7 @@
             &:checked + *
                 color: #fff;
 
-    &__detail-title-text
+    &__labelText
         font-family: ff-PD;
         font-style: normal;
         font-weight: normal;
@@ -159,3 +157,159 @@
         &:hover
         &.is-active
             color: #fff;
+
+
+// .detailFilter
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     position: relative;
+//     // border-bottom: 1px solid #3A3A3A;
+//     z-index: 10;
+//     box-sizing: border-box;
+//
+//     &:after
+//         content: ' ';
+//         width: 100%;
+//         height: 1px;
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         background: #3A3A3A;
+//
+//     &__popular
+//         font-family: ff-Quasimodo;
+//         font-size: rel-size(23px);
+//         line-height: rel-size(26px);
+//         color: #FEFEFE;
+//         padding: rel-size(40px) 0 rel-size(40px) 0;
+//
+//     &__filter-button
+//         font-family: ff-Quasimodo;
+//         font-size: rel-size(23px);
+//         line-height: rel-size(26px);
+//         color: #FEFEFE;
+//         padding: rel-size(40px) 0 rel-size(40px) 0;
+//         opacity: 0.5;
+//         cursor: pointer;
+//         transition: opacity 0.3s;
+//
+//         &:hover
+//             opacity: 1;
+//
+//         &.is-active
+//             opacity: 1;
+//             border-bottom: 4px solid #FEFEFE;
+//
+//     &__filter
+//         display: flex;
+//
+//     &__filter-container
+//         display: flex;
+//         margin: 0;
+//         padding: rel-size(40px) 0 rel-size(40px) 0;
+//
+//         li
+//             margin: 0 rel-size(15px);
+//             padding: 0;
+//             font-family: ff-Quasimodo;
+//             font-size: rel-size(23px);
+//             line-height: rel-size(26px);
+//             color: #FEFEFE;
+//
+//             &:before
+//                 display: none;
+//
+//     &__filter-detail
+//         position: absolute;
+//         top: 100%;
+//         left: 0;
+
+// .filterDetail
+//     width: 100%;
+//     background: #111;
+//     border-bottom: 1px solid #3A3A3A;
+//     z-index: -1;
+//     background: url("/dist/images/background.jpg") left top;
+//     background-size: 130px 130px;
+//     transition: opacity 0.5s;
+//     height: 0;
+//     overflow: hidden;
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//
+//     &.is-active
+//         height: auto;
+//         opacity: 1;
+//
+//     &__categoryTitle
+//         font-family: ff-Quasimodo;
+//         font-size: rel-size(31px);
+//         line-height: rel-size(27px);
+//         color: #919191;
+//         margin-bottom: rel-size(40px);
+//         display: inline-flex;
+//         align-items: center;
+//         cursor: pointer;
+//         transition: color 0.3s;
+//
+//         &:last-child
+//             margin-bottom: 0;
+//
+//         &:hover
+//         &.is-active
+//             color: #fff;
+//
+//     &__category-container
+//         width: calc(100% - 15rem);
+//         position: relative;
+//
+//     &__category-title--clear
+//         display: block;
+//         width: rel-size(10px);
+//         height: @width;
+//         background: url('/dist/images/clear.svg') center center no-repeat;
+//         background-size: contain;
+//         margin-left: rel-size(15px);
+//         cursor: pointer;
+//
+//     &__detail
+//         padding: rel-size(80px) rel-size(20px) rel-size(36px) rel-size(160px);
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         // display: flex;
+//         flex-direction: column;
+//         flex-wrap: wrap;
+//         display: none;
+//
+//         &.is-active
+//             display: flex;
+//
+//     &__detail-title
+//         margin: 0 rel-size(30px) rel-size(38px) 0;
+//
+//         input
+//             display: none;
+//
+//             &:checked + *
+//                 color: #fff;
+//
+//     &__detail-title-text
+//         font-family: ff-PD;
+//         font-style: normal;
+//         font-weight: normal;
+//         font-size: rel-size(18px);
+//         line-height: rel-size(26px);
+//         font-feature-settings: 'pnum' on, 'lnum' on;
+//         color: #919191;
+//         cursor: pointer;
+//         transition: color 0.3s;
+//
+//         &:hover
+//         &.is-active
+//             color: #fff;

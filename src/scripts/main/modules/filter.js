@@ -1,107 +1,126 @@
-var detailFilter = document.querySelector('.detailFilter');
-var filterButton = document.querySelector('.detailFilter__filter-button');
-var filterDetail = document.querySelector('.filterDetail');
-var filterCategory = document.querySelectorAll('.filterDetail__category-title');
-var filterContainer = document.querySelectorAll('.filterDetail__detail');
-var checkbox = document.querySelectorAll('.filterDetail__detail-title input[type="checkbox"]');
-var filterPreview = document.querySelector('.detailFilter__filter-container');
+function Filter(self) {
+    this._self = self;
+    this._popular = this._self.querySelector('.detailFilter__popular');
+    this._filterButton = this._self.querySelector('.detailFilter__filterButton');
+    this._filterDisplay = this._self.querySelector('.detailFilter__filterDisplay');
+    this._filterDetail = this._self.querySelector('.filterDetail');
+    this._filterCategory = this._self.querySelectorAll('.filterDetail__category');
 
-if (detailFilter) {
-    //Открывает фильтр
-    filterButton.addEventListener('click', function() {
-        filterDetail.classList.toggle('is-active');
+    this.init();
+}
+
+Filter.prototype.init = function() {
+    console.log('init');
+    var self = this;
+
+    this._filterButton.addEventListener('click', function() {
+        this.classList.toggle('is-active');
+        self._filterDetail.classList.toggle('is-active');
     });
-    detailFilter.addEventListener('mouseleave', function() {
-        filterDetail.classList.remove('is-active');
+    this._self.addEventListener('mouseleave', function() {
+        self._filterButton.classList.remove('is-active');
+        self._filterDetail.classList.remove('is-active');
     });
 
-    // Клик по категории фильтра
-    for (var i = 0; i < filterCategory.length; i++) {
-        var item = filterCategory[i];
 
-        item.addEventListener('click', function() {
-            var self = this;
+    for (var i = 0; i < this._filterCategory.length; i++) {
+        var item = this._filterCategory[i];
+        item.addEventListener('click', function(event) {
+            self.changeCategory(this);
 
-            for (var i = 0; i < filterCategory.length; i++) {
-                filterCategory[i].classList.remove('is-active');
-            }
-            self.classList.add('is-active');
+            if (event.target.classList.contains('filterDetail__categoryTitle--clear')) {
+                event.target.remove();
+                var inputs = this.querySelectorAll('input');
 
-            for (var i = 0; i < filterContainer.length; i++) {
-                var item = filterContainer[i];
-                item.classList.remove('is-active');
-
-                if (self.getAttribute('data-index') === item.getAttribute('data-index')) {
-                    item.classList.add('is-active');
+                for (var i = 0; i < inputs.length; i++) {
+                    var item = inputs[i];
+                    item.checked = false;
                 }
             }
+        });
 
-        })
+        // Нумерация названий чекбоксов
+        var itemIndex = item.getAttribute('data-index');
+        var labelText = item.querySelectorAll('.filterDetail__labelText');
+
+        for (var j = 0; j < labelText.length; j++) {
+            var item = labelText[j];
+            item.setAttribute('data-category', itemIndex);
+            item.setAttribute('data-number', j);
+        }
     }
+}
 
+// Переключение категории
+Filter.prototype.changeCategory = function(th) {
+    for (var i = 0; i < this._filterCategory.length; i++) {
+        var item = this._filterCategory[i];
+        item.classList.remove('is-active');
+    }
+    th.classList.add('is-active');
+}
 
-    // Клик по чекбоксу
-    for (var i = 0; i < checkbox.length; i++) {
-        var item = checkbox[i];
+function FilterCategory(self) {
+    this._self = self;
+    this._categoryTitle = this._self.querySelector('.filterDetail__categoryTitle');
+    this._label = this._self.querySelectorAll('.filterDetail__label');
+
+    this.init();
+}
+
+FilterCategory.prototype.init = function() {
+    var self = this;
+
+    for (var i = 0; i < this._label.length; i++) {
+        var item = this._label[i];
 
         item.addEventListener('change', function() {
-            var thisContainer = this.closest('.filterDetail__detail');
-            var thisContainerTitle;
-            var thisContainerCheckbox = thisContainer.querySelectorAll('.filterDetail__detail-title input[type="checkbox"]');
-            var check = false;
-
-            for (var i = 0; i < filterCategory.length; i++) {
-                var item = filterCategory[i];
-                if (thisContainer.getAttribute('data-index') === item.getAttribute('data-index')) {
-                    thisContainerTitle = item;
-                }
-            }
-
-            for (var i = 0; i < thisContainerCheckbox.length; i++) {
-                var item = thisContainerCheckbox[i];
-
-                if (item.checked) {
-
-                    check = true;
-                    break;
-                }
-            }
-
-            if (check && !thisContainerTitle.querySelector('.filterDetail__category-title--clear')) {
-                var clear = document.createElement('span');
-                clear.className = 'filterDetail__category-title--clear';
-                // clear.innerText = 'X';
-                thisContainerTitle.appendChild(clear);
-            }
-            else if (!check && thisContainerTitle.querySelector('.filterDetail__category-title--clear')) {
-                thisContainerTitle.querySelector('.filterDetail__category-title--clear').remove();
-            }
+            self.checkboxChange()
         });
     }
 
+}
 
-    //Клик по кресту категории фильтра
-    for (var i = 0; i < filterCategory.length; i++) {
-        var item = filterCategory[i];
+// Клик по чекбоксу и установка креста на категорию
+FilterCategory.prototype.checkboxChange = function() {
+    var self = this;
+    var check = false;
 
-        item.addEventListener('click', function(event) {
-            var self = this;
-            var thisContainer;
-            var thisContainerCheckbox;
-            if (event.target.classList.contains('filterDetail__category-title--clear')) {
-                for (var i = 0; i < filterContainer.length; i++) {
-                    var item = filterContainer[i];
+    for (var i = 0; i < this._label.length; i++) {
+        var item = this._label[i];
+        var checkbox = item.querySelector('input[type="checkbox"]');
 
-                    if (self.getAttribute('data-index') === item.getAttribute('data-index')) {
-                        thisContainer = item;
-                        thisContainerCheckbox = thisContainer.querySelectorAll('.filterDetail__detail-title input[type="checkbox"]')
-                    }
-                }
-                self.querySelector('.filterDetail__category-title--clear').remove();
-                for (var i = 0; i < thisContainerCheckbox.length; i++) {
-                    thisContainerCheckbox[i].checked = false;
-                }
-            }
-        });
+        if (checkbox.checked) {
+            check = true;
+            break;
+        }
+
+
+    }
+    if (check && !self._categoryTitle.querySelector('.filterDetail__categoryTitle--clear')) {
+        var clear = document.createElement('span');
+        clear.className = 'filterDetail__categoryTitle--clear';
+        self._categoryTitle.appendChild(clear);
+    }
+    else if (!check && self._categoryTitle.querySelector('.filterDetail__categoryTitle--clear')) {
+        self._categoryTitle.querySelector('.filterDetail__categoryTitle--clear').remove();
+    }
+}
+
+
+
+
+var filter = document.querySelector('.detailFilter');
+if (filter) {
+    var filterConst = new Filter(filter);
+}
+
+var filterCategoryArr = document.querySelectorAll('.filterDetail__category');
+var filterCategoryConst = [];
+if (filterCategoryArr) {
+    for (var i = 0; i < filterCategoryArr.length; i++) {
+        var item = filterCategoryArr[i];
+        var filterCategory = new FilterCategory(item);
+        filterCategoryConst.push(filterCategory);
     }
 }
