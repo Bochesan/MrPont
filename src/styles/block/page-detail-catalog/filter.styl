@@ -8,20 +8,23 @@
     &__head
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: flex-start;
         border-bottom: 1px solid #3A3A3A;
+        min-height: rel-size(60px);
 
     &__popular
         font-family: ff-Quasimodo;
         font-size: rel-size(23px);
         line-height: rel-size(26px);
         color: #FEFEFE;
-        padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
+        // padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
+        padding: 0 0 0 rel-size(30px);
         background: url('/dist/images/sortBy.svg') left center no-repeat;
         background-size: 0.9rem 0.5rem;
         opacity: 0.5;
         cursor: pointer;
         transition: opacity 0.3s;
+        white-space: nowrap;
 
         &:hover
             opacity: 1;
@@ -35,27 +38,31 @@
         font-size: rel-size(23px);
         line-height: rel-size(26px);
         color: #FEFEFE;
-        padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
+        // padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
+        padding: 0 0 0 rel-size(30px);
         background: url('/dist/images/filter.svg') left center no-repeat;
         background-size: 0.9rem 0.5rem;
         opacity: 0.5;
         cursor: pointer;
         transition: opacity 0.3s;
+        align-self: flex-start;
 
         &:hover
             opacity: 1;
 
         &.is-active
             opacity: 1;
-            border-bottom: 4px solid #FEFEFE;
+            // border-bottom: 4px solid #FEFEFE;
 
     &__filter
         display: flex;
 
     &__filterDisplay
         display: flex;
+        flex-wrap: wrap;
         margin: 0;
-        padding: rel-size(40px) 0 rel-size(40px) 0;
+        padding: 0 rel-size(30px);
+        // padding: rel-size(40px) 0 rel-size(40px) 0;
 
         .filterDetail__labelText
             margin: 0 rel-size(10px);
@@ -71,6 +78,7 @@
             background-size: 0.5rem 0.5rem;
             opacity: 0.5;
             transition: 0.3s;
+            white-space: nowrap;
 
             &:hover
                 opacity: 1;
