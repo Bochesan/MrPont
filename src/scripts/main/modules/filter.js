@@ -4,7 +4,12 @@ function Filter(self) {
     this._filterButton = this._self.querySelector('.detailFilter__filterButton');
     this._filterDisplay = this._self.querySelector('.detailFilter__filterDisplay');
     this._filterDetail = this._self.querySelector('.filterDetail');
+    this._filterRange = this._self.querySelector('.filterDetail__price');
+    this._filterRangeInput = this._filterRange.querySelectorAll('.filterDetail__priceInput');
+    this._filterRangeInputMin = this._filterRange.querySelector('.filterDetail__priceInput--min');
+    this._filterRangeInputMax = this._filterRange.querySelector('.filterDetail__priceInput--max');
     this._filterCategory = this._self.querySelectorAll('.filterDetail__category');
+    this._filterDetailLabel = this._self.querySelectorAll('.filterDetail__label');
 
     this.init();
 }
@@ -49,6 +54,68 @@ Filter.prototype.init = function() {
             item.setAttribute('data-number', j);
         }
     }
+
+    // Удаляем элемент из списка
+    this._filterDisplay.addEventListener('click', function(event) {
+        if (event.target.classList.contains('filterDetail__labelText')) {
+            var thCategory = event.target.getAttribute('data-category');
+            var thNumber = event.target.getAttribute('data-number');
+
+            var triggerItem = self._filterDetail.querySelector('[data-category="' + thCategory + '"][data-number="' + thNumber + '"]').closest('.filterDetail__label').querySelector('input').checked = false;
+            filterCategoryConst[thCategory].checkboxChange(triggerItem);
+            event.target.remove();
+        }
+    });
+
+    // Ввод только чисел
+    for (var i = 0; i < this._filterRangeInput.length; i++) {
+        var item = this._filterRangeInput[i];
+        item.addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^\d,]/g, '');
+            if (this.value != NaN) {
+                parseInt(this.value.replace(/[^\d,]/g, ''), 10);
+            }
+            if (this.value.length > 8 && this.value != NaN) {
+                this.value = this.value.slice(0, -1);
+            }
+        });
+    }
+
+    // Проверка на ввод числа в поле "от" не больше поля "до"
+    this._filterRangeInputMin.addEventListener('focusout', function() {
+        var thVal = this.value;
+        var maxVal = self._filterRangeInputMax.value;
+        if (thVal && maxVal && thVal > maxVal) {
+            this.value = maxVal;
+        }
+    });
+
+    // Проверка на ввод числа в поле "до" не больше поля "от"
+    this._filterRangeInputMax.addEventListener('focusout', function() {
+        var thVal = this.value;
+        var minVal = self._filterRangeInputMin.value;
+        if (thVal && minVal && thVal < minVal) {
+            this.value = minVal;
+        }
+    });
+
+}
+
+// Добавляем в верхнюю строку фильтруемое свойство
+Filter.prototype.addFilterItem = function(th) {
+    var self = this;
+    var selfItem = th.querySelector('.filterDetail__labelText');
+    var selfCategory = selfItem.getAttribute('data-category');
+    var selfNumber = selfItem.getAttribute('data-number');
+
+    if (self._filterDisplay.querySelector('[data-category="' + selfCategory + '"][data-number="' + selfNumber + '"]')) {
+        self._filterDisplay.querySelector('[data-category="' + selfCategory + '"][data-number="' + selfNumber + '"]').remove();
+    }
+    else {
+        var clonedNode = selfItem.cloneNode(true);
+        self._filterDisplay.appendChild(clonedNode);
+    }
+
 }
 
 // Переключение категории
@@ -75,14 +142,15 @@ FilterCategory.prototype.init = function() {
         var item = this._label[i];
 
         item.addEventListener('change', function() {
-            self.checkboxChange()
+            self.checkboxChange();
+            filterConst.addFilterItem(this);
         });
     }
 
 }
 
 // Клик по чекбоксу и установка креста на категорию
-FilterCategory.prototype.checkboxChange = function() {
+FilterCategory.prototype.checkboxChange = function(th) {
     var self = this;
     var check = false;
 
