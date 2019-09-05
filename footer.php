@@ -2,7 +2,7 @@
     <div class="footer wrapper">
         <div class="footer__col-1">
             <a href="/" class="footer__logo">
-                <img src="/dist/images/_logo.svg" alt="">
+                <img src="/dist/images/logo.svg" alt="">
             </a>
         </div>
         <div class="footer__col-2">
