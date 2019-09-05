@@ -5,6 +5,9 @@
     background: url("/dist/images/background.jpg") left top;
     background-size: 130px 130px;
 
+    +below(768px)
+        margin-bottom: rel-size(30px);
+
     &__head
         display: flex;
         justify-content: space-between;
@@ -12,33 +15,59 @@
         border-bottom: 1px solid #3A3A3A;
         min-height: rel-size(60px);
 
-    &__popular
+        +below(768px)
+            flex-direction: column;
+            padding: rel-size(10px);
+
+    &__popular input
+        display: none;
+
+    &__popularUp:checked ~ .detailFilter__popularTitle
+        opacity: 1;
+
+        &:before
+            opacity: 1;
+
+    &__popularDown:checked ~ .detailFilter__popularTitle
+        opacity: 1;
+
+        &:before
+            opacity: 1;
+            transform: translate(0,-50%) rotate(180deg);
+
+
+    &__popularTitle
         font-family: ff-Quasimodo;
         font-size: rel-size(23px);
         line-height: rel-size(26px);
         color: #FEFEFE;
         // padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
-        padding: 0 0 0 rel-size(30px);
-        background: url('/dist/images/sortBy.svg') left center no-repeat;
-        background-size: 0.9rem 0.5rem;
+        padding: 0 0 0 rel-size(25px);
         opacity: 0.5;
         cursor: pointer;
         transition: opacity 0.3s;
         white-space: nowrap;
+        position: relative;
+
+        &:before
+            content: ' ';
+            background: url('/dist/images/sortBy.svg') left center no-repeat;
+            background-size: contain;
+            width: 0.9rem;
+            height:  0.5rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0,-50%);
 
         &:hover
             opacity: 1;
-
-        &.is-active
-            opacity: 1;
-            border-bottom: 4px solid #FEFEFE;
 
     &__filterButton
         font-family: ff-Quasimodo;
         font-size: rel-size(23px);
         line-height: rel-size(26px);
         color: #FEFEFE;
-        // padding: rel-size(40px) 0 rel-size(40px) rel-size(30px);
         padding: 0 0 0 rel-size(30px);
         background: url('/dist/images/filter.svg') left center no-repeat;
         background-size: 0.9rem 0.5rem;
@@ -47,24 +76,35 @@
         transition: opacity 0.3s;
         align-self: flex-start;
 
+        +below(768px)
+            order: 1;
+
         &:hover
             opacity: 1;
 
         &.is-active
             opacity: 1;
-            // border-bottom: 4px solid #FEFEFE;
 
     &__filter
         display: flex;
+
+        +below(768px)
+            flex-direction: column;
 
     &__filterDisplay
         display: flex;
         flex-wrap: wrap;
         margin: 0;
         padding: 0 rel-size(30px);
-        // padding: rel-size(40px) 0 rel-size(40px) 0;
+
+        +below(768px)
+            order: 2;
+            width: 100%;
+            margin: rel-size(10px) 0;
+            padding: 0;
 
         .filterDetail__labelText
+        .rangeItem
             margin: 0 rel-size(10px);
             padding: 0 rel-size(20px) 0 0;
             font-family: ff-PD;
@@ -79,6 +119,10 @@
             opacity: 0.5;
             transition: 0.3s;
             white-space: nowrap;
+            cursor: pointer;
+
+            +below(768px)
+                line-height: normal;
 
             &:hover
                 opacity: 1;
@@ -107,12 +151,25 @@
         width: 15rem;
         border-right: 1px solid #3A3A3A;
 
+        +below(768px)
+            width: 100%;
+            padding: rel-size(20px) 0;
+            display: flex;
+            justify-content: space-between;
+            border: none;
+
     &.is-active
         height: auto;
         opacity: 1;
 
+        +below(768px)
+            overflow: visible;
+
     &__category
         margin-bottom: rel-size(40px);
+
+        +below(768px)
+            margin-bottom: 0;
 
         &:last-child
             margin-bottom: 0;
@@ -151,6 +208,21 @@
         flex-direction: column;
         flex-wrap: wrap;
         display: none;
+
+        +below(1180px)
+            padding: rel-size(80px) rel-size(60px) rel-size(40px);
+
+        +below(768px)
+            width: 100%;
+            top: 100%;
+            right: initial;
+            left: 0;
+            height: auto;
+            padding: rel-size(15px) 4%;
+            background: url("/dist/images/background.jpg") left top;
+            background-size: 130px 130px;
+            border-bottom: 1px solid #3A3A3A;
+            flex-direction: row;
 
     &__category
 
@@ -193,10 +265,22 @@
     &__price
         display: flex;
 
+        +below(920px)
+            flex-direction: column;
+
+        +below(768px)
+            width: 100%;
+
     &__priceLabel
         display: flex;
         flex-direction: column;
         margin: 0 rel-size(20px) 0 0;
+
+        +below(920px)
+            margin-bottom: rel-size(30px);
+
+        +below(768px)
+            margin-right: 0;
 
     &__priceTitle
         font-family: ff-PD;
@@ -224,3 +308,6 @@
         line-height: normal;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FEFEFE;
+
+        +below(768px)
+            width: 100%;

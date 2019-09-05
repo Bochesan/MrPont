@@ -17,7 +17,11 @@
 
     <form action="" class="detailFilter">
         <div class="detailFilter__head wrapper">
-            <div class="detailFilter__popular">По популярности</div>
+            <div class="detailFilter__popular">
+                <input type="radio" class="detailFilter__popularUp" name="popular" value="1">
+                <input type="radio" class="detailFilter__popularDown" name="popular" value="2">
+                <span class="detailFilter__popularTitle">По популярности</span>
+            </div>
             <div class="detailFilter__filter">
                 <div class="detailFilter__filterDisplay"></div>
                 <div class="detailFilter__filterButton">Фильтры</div>
@@ -25,7 +29,7 @@
         </div>
         <div class="detailFilter__filterDetail filterDetail wrapper">
             <div class="filterDetail__inner">
-                <div class="filterDetail__category is-active" data-index="0">
+                <div class="filterDetail__category filterDetail__category--range is-active" data-index="0">
                     <div class="filterDetail__categoryTitle">Цена</div>
                     <div class="filterDetail__categoryContainer">
                         <div class="filterDetail__price">
@@ -41,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="filterDetail__category" data-index="1">
+                <div class="filterDetail__category filterDetail__category--checkbox" data-index="1">
                     <div class="filterDetail__categoryTitle">Вставка</div>
                     <div class="filterDetail__categoryContainer">
                         <label class="filterDetail__label">
@@ -79,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="filterDetail__category" data-index="2">
+                <div class="filterDetail__category filterDetail__category--checkbox" data-index="2">
                     <div class="filterDetail__categoryTitle">Материал</div>
                     <div class="filterDetail__categoryContainer">
                         <label class="filterDetail__label">
@@ -117,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="filterDetail__category" data-index="3">
+                <div class="filterDetail__category filterDetail__category--checkbox" data-index="3">
                     <div class="filterDetail__categoryTitle">Размер</div>
                     <div class="filterDetail__categoryContainer">
                         <label class="filterDetail__label">

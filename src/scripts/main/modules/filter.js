@@ -15,7 +15,6 @@ function Filter(self) {
 }
 
 Filter.prototype.init = function() {
-    console.log('init');
     var self = this;
 
     this._filterButton.addEventListener('click', function() {
@@ -27,20 +26,43 @@ Filter.prototype.init = function() {
         self._filterDetail.classList.remove('is-active');
     });
 
+    this._popular.addEventListener('click', function() {
+        self.popularChange();
+    });
+
 
     for (var i = 0; i < this._filterCategory.length; i++) {
         var item = this._filterCategory[i];
         item.addEventListener('click', function(event) {
             self.changeCategory(this);
 
-            if (event.target.classList.contains('filterDetail__categoryTitle--clear')) {
+            if (event.target.classList.contains('filterDetail__categoryTitle--clear') && this.classList.contains("filterDetail__category--checkbox")) {
                 event.target.remove();
                 var inputs = this.querySelectorAll('input');
 
                 for (var i = 0; i < inputs.length; i++) {
                     var item = inputs[i];
+                    var itemLabel = item.closest('.filterDetail__label');
+                    var selfItem = itemLabel.querySelector('.filterDetail__labelText');
+                    var selfCategory = selfItem.getAttribute('data-category');
+                    var selfNumber = selfItem.getAttribute('data-number');
+
                     item.checked = false;
+
+                    if (self._filterDisplay.querySelector('[data-category="' + selfCategory + '"][data-number="' + selfNumber + '"]')) {
+                        self._filterDisplay.querySelector('[data-category="' + selfCategory + '"][data-number="' + selfNumber + '"]').remove();
+                    }
                 }
+
+            }
+            else if (event.target.classList.contains('filterDetail__categoryTitle--clear') && this.classList.contains("filterDetail__category--range")) {
+                event.target.remove();
+                var inputs = this.querySelectorAll('input');
+                for (var i = 0; i < inputs.length; i++) {
+                    var item = inputs[i];
+                    item.value = '';
+                }
+                self._filterDisplay.querySelector('.rangeItem').remove();
             }
         });
 
@@ -63,6 +85,15 @@ Filter.prototype.init = function() {
 
             var triggerItem = self._filterDetail.querySelector('[data-category="' + thCategory + '"][data-number="' + thNumber + '"]').closest('.filterDetail__label').querySelector('input').checked = false;
             filterCategoryConst[thCategory].checkboxChange(triggerItem);
+            event.target.remove();
+        }
+        if (event.target.classList.contains('rangeItem')) {
+            self._self.querySelector('.filterDetail__category--range .filterDetail__categoryTitle--clear').remove();
+            var inputs = self._self.querySelector('.filterDetail__category--range').querySelectorAll('input');
+            for (var i = 0; i < inputs.length; i++) {
+                var item = inputs[i];
+                item.value = '';
+            }
             event.target.remove();
         }
     });
@@ -99,6 +130,67 @@ Filter.prototype.init = function() {
         }
     });
 
+// Установка/обновление/удаление rangeItem в поиск
+    for (var i = 0; i < this._filterRangeInput.length; i++) {
+        var item = this._filterRangeInput[i];
+
+        item.addEventListener('focusout', function() {
+            var category = this.closest('.filterDetail__category');
+            if (self._filterRangeInputMin.value && self._filterRangeInputMax.value) {
+                self.addRangeItem(category, self._filterRangeInputMin.value, self._filterRangeInputMax.value);
+            }
+            else {
+                self.addRangeItem(category, 0, 0);
+            }
+
+            if (self._filterDisplay.querySelector('.rangeItem') && !item.closest('.filterDetail__category').querySelector('.filterDetail__categoryTitle--clear')) {
+                var clear = document.createElement('span');
+                clear.className = 'filterDetail__categoryTitle--clear';
+                item.closest('.filterDetail__category').querySelector('.filterDetail__categoryTitle').appendChild(clear);
+            }
+        });
+    }
+
+}
+
+// Смена состояния сотировки по популярности
+Filter.prototype.popularChange = function() {
+    var self = this;
+    var up = this._popular.querySelector('.detailFilter__popularUp');
+    var down = this._popular.querySelector('.detailFilter__popularDown');
+
+    if (up.checked == false && down.checked == false) {
+        up.checked = true;
+    }
+    else if (up.checked == true && down.checked == false) {
+        up.checked = false;
+        down.checked = true;
+    }
+    else {
+        up.checked = false;
+        down.checked = false;
+    }
+
+
+}
+
+// Установка/обновление/удаление rangeItem в поиск
+Filter.prototype.addRangeItem = function(category, min, max) {
+    var rangeItem = this._filterDisplay.querySelector('.rangeItem');
+    if (rangeItem) {
+        rangeItem.remove();
+    }
+    if (min && max) {
+        var newRangeItem = document.createElement('span');
+        newRangeItem.className = 'rangeItem';
+        newRangeItem.innerHTML = min + ' — ' + max;
+        this._filterDisplay.appendChild(newRangeItem);
+    }
+    else {
+        if (category.querySelector('.filterDetail__categoryTitle--clear')) {
+            category.querySelector('.filterDetail__categoryTitle--clear').remove();
+        }
+    }
 }
 
 // Добавляем в верхнюю строку фильтруемое свойство
