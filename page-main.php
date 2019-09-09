@@ -4,7 +4,7 @@
     <div class="main-screen wrapper">
         <div class="main-screen__title">Ювелирные изделия из<br>серебра и&nbsp;золота на&nbsp;заказ</div>
         <div class="main-screen__info main-screen__info--address">
-            <a href="#">ТВЦ Тишинка</a>
+            <a href="/page-contacts.php">ТВЦ Тишинка</a>
         </div>
         <div class="main-screen__info main-screen__info--worktime">с 10:00 до 20:00</div>
         <div class="main-screen__info main-screen__info--phone">

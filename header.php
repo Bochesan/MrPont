@@ -25,7 +25,7 @@
                                 <div class="menu-button__line menu-button__line--3"></div>
                               </div>
                         </div>
-                        <span class="header__search">
+                        <span class="mobileSearchButton">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="8.5" cy="8.5" r="8" stroke="#E1E1E1"/>
                                 <path d="M14.5 14.5L19.5 19.5" stroke="#E1E1E1"/>
@@ -35,17 +35,19 @@
                     <a class="header__logo" href="/">
                         <img src="/dist/images/logo.svg" alt="">
                     </a>
-                    <div class="header__basket">
+
                         <div class="header__controls">
-                            <span class="header__search">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8.5" cy="8.5" r="8" stroke="#E1E1E1"/>
-                                    <path d="M14.5 14.5L19.5 19.5" stroke="#E1E1E1"/>
-                                </svg>
-                            </span>
+
+                                <form class="search" action="" method="">
+                                    <input type="text" class="search__input">
+                                    <div class="search__clear"></div>
+                                    <input type="submit" class="search__submit" name="" value="">
+                                    <div class="search__button"></div>
+                                </form>
+
                             <a href="/page-basket.php" class="header__basket">Корзина(0)</a>
                         </div>
-                    </div>
+
                 </div>
 
                 <nav class="header__nav wrapper">

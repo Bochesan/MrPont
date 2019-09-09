@@ -63,19 +63,20 @@
         display: flex;
         align-items: center;
 
-        .header__search
-            display: none;
-            margin-left: rel-size(30px);
-            transform: translate(0,3px);
-
-            +below(480px)
-                display: block;
+        // .header__search
+        //     display: none;
+        //     margin-left: rel-size(30px);
+        //     transform: translate(0,3px);
+        //
+        //     +below(480px)
+        //         display: block;
 
     &__logo
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 100;
 
         img
             width: rel-size(60px);
@@ -86,13 +87,13 @@
         align-items: center;
 
     &__search
-        margin-right: rel-size(46px);
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+        // margin-right: rel-size(46px);
+        // display: flex;
+        // align-items: center;
+        // cursor: pointer;
 
-        +below(480px)
-            display: none;
+        // +below(480px)
+        //     display: none;
 
     &__basket
         display: flex;

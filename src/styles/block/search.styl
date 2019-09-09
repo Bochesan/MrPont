@@ -1,0 +1,103 @@
+.search
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: rel-size(46px);
+
+    +below(1024px)
+        background: url('/dist/images/background.jpg') left top;
+        background-size: 130px 130px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 150;
+        padding: 0 4%;
+        transform: translate(0,-100%);
+        transition: transform 0.5s;
+
+    &.is-opened
+
+        .search__input
+            width: 100%;
+
+        .search__clear
+            display: block;
+
+        .search__submit
+            display: block;
+
+        .search__button
+            display: none;
+
+        +below(1024px)
+            transform: translate(0,0%);
+
+    &__input
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        display: block;
+        max-width: rel-size(200px);
+        width: 100%;
+        height: rel-size(40px);
+        outline: none;
+        appearance: none;
+        width: 0%;
+        overflow: hidden;
+        transition: width 0.3s;
+
+        +below(1024px)
+            display: block;
+            width: 100%;
+            max-width: none;
+
+    &__submit
+        display: block;
+        width: 20px;
+        height: @width;
+        margin-left: 10px;
+        background: url('/dist/images/search.svg') center center no-repeat;
+        border: none;
+        background-size: contain;
+        outline: none;
+        appearance: none;
+        display: none;
+
+        +below(1024px)
+            display: block;
+
+    &__button
+        width: 20px;
+        height: @width;
+        margin-left: 10px;
+        background: url('/dist/images/search.svg') center center no-repeat;
+        background-size: contain;
+        cursor: pointer;
+
+        +below(1024px)
+            display: none;
+
+    &__clear
+        display: none;
+        width: 20px;
+        height: @width;
+        margin-left: 10px;
+        background: url('/dist/images/close.svg') center center no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        margin: 0 0 0 10px;
+
+        +below(1024px)
+            display: block;
+
+.mobileSearchButton
+    display: none;
+    margin-left: rel-size(45px);
+    cursor: pointer;
+
+    +below(1024px)
+        display: block;
