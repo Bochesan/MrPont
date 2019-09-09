@@ -78,6 +78,7 @@
 
         +below(768px)
             order: 1;
+            margin: rel-size(15px) 0;
 
         &:hover
             opacity: 1;
@@ -99,7 +100,7 @@
         padding: 0 rel-size(30px);
 
         +below(768px)
-            order: 2;
+            order: 3;
             width: 100%;
             margin: rel-size(10px) 0;
             padding: 0;
@@ -107,6 +108,10 @@
         &.filtered + .detailFilter__controls
             display: flex;
             align-items: flex-start;
+
+            +below(768px)
+                order: 2;
+                margin: rel-size(15px) 0;
 
         .filterDetail__labelText
         .rangeItem
