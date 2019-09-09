@@ -24,6 +24,10 @@
             </div>
             <div class="detailFilter__filter">
                 <div class="detailFilter__filterDisplay"></div>
+                <div class="detailFilter__controls">
+                    <input class="detailFilter__submit" type="submit" name="" value="">
+                    <div class="detailFilter__clear"></div>
+                </div>
                 <div class="detailFilter__filterButton">Фильтры</div>
             </div>
         </div>

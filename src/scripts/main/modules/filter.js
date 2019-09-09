@@ -10,6 +10,7 @@ function Filter(self) {
     this._filterRangeInputMax = this._filterRange.querySelector('.filterDetail__priceInput--max');
     this._filterCategory = this._self.querySelectorAll('.filterDetail__category');
     this._filterDetailLabel = this._self.querySelectorAll('.filterDetail__label');
+    this._filterDisplayClear = this._self.querySelector('.detailFilter__clear');
 
     this.init();
 }
@@ -64,6 +65,7 @@ Filter.prototype.init = function() {
                 }
                 self._filterDisplay.querySelector('.rangeItem').remove();
             }
+            self.valueDisplayFilter();
         });
 
         // Нумерация названий чекбоксов
@@ -96,6 +98,7 @@ Filter.prototype.init = function() {
             }
             event.target.remove();
         }
+        self.valueDisplayFilter();
     });
 
     // Ввод только чисел
@@ -110,6 +113,7 @@ Filter.prototype.init = function() {
                 this.value = this.value.slice(0, -1);
             }
         });
+        self.valueDisplayFilter();
     }
 
     // Проверка на ввод числа в поле "от" не больше поля "до"
@@ -119,6 +123,7 @@ Filter.prototype.init = function() {
         if (thVal && maxVal && thVal > maxVal) {
             this.value = maxVal;
         }
+        self.valueDisplayFilter();
     });
 
     // Проверка на ввод числа в поле "до" не больше поля "от"
@@ -128,6 +133,7 @@ Filter.prototype.init = function() {
         if (thVal && minVal && thVal < minVal) {
             this.value = minVal;
         }
+        self.valueDisplayFilter();
     });
 
 // Установка/обновление/удаление rangeItem в поиск
@@ -148,8 +154,17 @@ Filter.prototype.init = function() {
                 clear.className = 'filterDetail__categoryTitle--clear';
                 item.closest('.filterDetail__category').querySelector('.filterDetail__categoryTitle').appendChild(clear);
             }
+            self.valueDisplayFilter();
         });
     }
+
+    this._filterDisplayClear.addEventListener('click', function() {
+        var items = self._filterDisplay.querySelectorAll('span');
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            item.click();
+        }
+    });
 
 }
 
@@ -185,6 +200,7 @@ Filter.prototype.addRangeItem = function(category, min, max) {
         newRangeItem.className = 'rangeItem';
         newRangeItem.innerHTML = min + ' — ' + max;
         this._filterDisplay.appendChild(newRangeItem);
+        this._filterDisplay.classList.add('filtered');
     }
     else {
         if (category.querySelector('.filterDetail__categoryTitle--clear')) {
@@ -206,6 +222,7 @@ Filter.prototype.addFilterItem = function(th) {
     else {
         var clonedNode = selfItem.cloneNode(true);
         self._filterDisplay.appendChild(clonedNode);
+        self._filterDisplay.classList.add('filtered');
     }
 
 }
@@ -217,6 +234,12 @@ Filter.prototype.changeCategory = function(th) {
         item.classList.remove('is-active');
     }
     th.classList.add('is-active');
+}
+
+Filter.prototype.valueDisplayFilter = function() {
+    if (this._filterDisplay.innerHTML == '' && this._filterDisplay.classList.contains('filtered')) {
+        this._filterDisplay.classList.remove('filtered');
+    }
 }
 
 function FilterCategory(self) {

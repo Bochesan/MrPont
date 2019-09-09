@@ -93,6 +93,7 @@
 
     &__filterDisplay
         display: flex;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         margin: 0;
         padding: 0 rel-size(30px);
@@ -102,6 +103,10 @@
             width: 100%;
             margin: rel-size(10px) 0;
             padding: 0;
+
+        &.filtered + .detailFilter__controls
+            display: flex;
+            align-items: flex-start;
 
         .filterDetail__labelText
         .rangeItem
@@ -129,6 +134,31 @@
 
             &:before
                 display: none;
+
+    &__controls
+        display: none;
+
+    &__submit
+        display: inline-block;
+        width: 20px;
+        height: @width;
+        margin-left: 10px;
+        background: url('/dist/images/search.svg') center center no-repeat;
+        border: none;
+        background-size: contain;
+        outline: none;
+        appearance: none;
+
+    &__clear
+        display: inline-block;
+        width: 20px;
+        height: @width;
+        margin-left: 10px;
+        background: url('/dist/images/close.svg') center center no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        margin: 0 10px;
 
 .filterDetail
     width: 100%;
