@@ -32,6 +32,7 @@
             </div>
         </div>
         <div class="detailFilter__filterDetail filterDetail wrapper">
+        <div class="filterDetail__container" style="position: relative; width: 100%;">
             <div class="filterDetail__inner">
                 <div class="filterDetail__category filterDetail__category--range is-active" data-index="0">
                     <div class="filterDetail__categoryTitle">Цена</div>
@@ -207,6 +208,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </form>
 
