@@ -1,6 +1,13 @@
 .novelty
     padding: rel-size(30px);
 
+    &__galleryName
+        font-family: "Quasimodo",sans-serif;
+        font-size: 2.1rem;
+        line-height: 2.15rem;
+        color: #fefefe;
+        margin-bottom: 1rem; 
+
     &__article
         max-width: rel-size(400px);
         width: 100%;
@@ -44,7 +51,7 @@
         border: 1px solid #3A3A3A;
         position: relative;
         overflow: initial !important;
-        margin-bottom: rel-size(40px);
+        margin-bottom: rel-size(20px);
 
         & .swiper-slide
             height: 100%;
@@ -84,8 +91,9 @@
         // top: calc(100% + 20px);
         // left: 0;
         width: 100%;
-        opacity: 0;
+        opacity: 1;
         transition: opacity 1s;
+        margin-top: rel-size(10px);
 
     &__gallery
         width: rel-size(400px);
