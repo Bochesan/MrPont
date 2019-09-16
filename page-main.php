@@ -96,6 +96,9 @@
             <div class="novelty__gallery novelty__gallery--1 shadow-name fadeIn">
                 <div class="shadow-name__title">Antique <br> crown</div>
                 <!-- Slider main container -->
+                <div class="novelty__galleryName">
+                    Кольца
+                </div>
                 <div class="novelty__slider novelty__slider--1 swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -116,15 +119,20 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
                 <!-- Slider main container -->
+                <a href="#" class="novelty__article-button button button--dark">В категорию</a>
 
                 <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
             <div class="novelty__gallery novelty__gallery--2 shadow-name">
                 <div class="shadow-name__title">Crosses</div>
+                <div class="novelty__galleryName">
+                    Браслеты
+                </div>
                 <div class="novelty__slider novelty__slider--2 swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -149,12 +157,17 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
+                <a href="#" class="novelty__article-button button button--dark">В категорию</a>
+
                 <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
         </div>
         <div class="novelty__row novelty__row--centered fadeIn">
             <div class="novelty__gallery novelty__gallery--3 shadow-name">
                 <div class="shadow-name__title">Warrior</div>
+                <div class="novelty__galleryName">
+                    Трости
+                </div>
                 <!-- Slider main container -->
                 <div class="novelty__slider novelty__slider--3 swiper-container">
                     <!-- Additional required wrapper -->
@@ -179,6 +192,8 @@
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
+
+                <a href="#" class="novelty__article-button button button--dark">В категорию</a>
 
                 <div class="novelty__gallery-info">Изумруд&nbsp;&mdash; драгоценный камень тёмно-зелёного цвета. Чистые изумруды синевато-зелёного цвета могут стоить дороже алмазов!</div>
             </div>
