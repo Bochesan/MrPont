@@ -2,6 +2,9 @@
 
 <main>
     <div class="main-screen wrapper">
+        <video class="main-screen__video" muted autoplay loop poster="posterimage.jpg">
+            <source src="/media/Kompozitsia1.mp4">
+        </video>
         <div class="main-screen__title">Ювелирные изделия из<br>серебра и&nbsp;золота на&nbsp;заказ</div>
         <div class="main-screen__info main-screen__info--address">
             <a href="/page-contacts.php">ТВЦ Тишинка</a>
