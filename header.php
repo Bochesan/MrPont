@@ -98,6 +98,18 @@
                             </ul>
                         </div>
                     </li>
+                    <li class="header__subnav-item header__subnav-item--submenu">
+                        <a href="#" class="header__subnav-link">Коллекции</a>
+                        <div class="header__subnav-submenu">
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="#" class="submenu__link">Виталий Азаров</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Мистер Ярослав</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Миссис Евгения</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Господин Богдан</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">Владислав Полицейский</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </header>
