@@ -2,7 +2,7 @@
 
 <main>
     <div class="main-screen wrapper">
-        <video class="main-screen__video" muted autoplay loop poster="posterimage.jpg">
+        <video class="main-screen__video" muted autoplay loop poster="/dist/images/head-section.png">
             <source src="/media/Kompozitsia1.mp4">
         </video>
         <div class="main-screen__title">Ювелирные изделия из<br>серебра и&nbsp;золота на&nbsp;заказ</div>

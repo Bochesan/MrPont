@@ -63,12 +63,20 @@
             border: none;
             padding: 0;
 
+        &--collection
+            padding: 0;
+
     &__image
         position: relative;
         width: 100%;
         padding-top: 80%;
         margin-top: rel-size(50px);
         margin-bottom: rel-size(50px);
+
+        &--collection
+            margin-top: 0;
+            overflow: hidden;
+            background: #111;
 
         +below(560px)
             margin-bottom: rel-size(70px);
@@ -91,8 +99,8 @@
             transform: translate(-50%,-50%);
             width: auto;
             height: auto;
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 90%;
+            max-height: 90%;
             transition: transform 0.5s;
 
     &__title
@@ -101,6 +109,9 @@
         line-height: rel-size(43px);
         color: #3A3A3A;
         transition: color 0.5s;
+
+        &--collection
+            padding: 0 rel-size(40px) rel-size(40px);
 
         +below(880px)
             font-size: rel-size(32px);

@@ -16,12 +16,14 @@ NavMenu.prototype.init = function() {
             this.classList.remove('opened');
             self._subnav.classList.remove('hide');
             self.close();
+            document.querySelector('body').style.overflowY = 'auto';
         }
         else {
             self.scroll(true);
             this.classList.add('opened');
             self._subnav.classList.add('hide');
             self.open();
+            document.querySelector('body').style.overflowY = 'hidden';
         }
     });
 }

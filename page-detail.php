@@ -18,6 +18,11 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="detail__slider-image">
+                                <img src="/dist/images/image.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="detail__slider-image">
                                 <img src="/dist/images/sl2.png" alt="">
                             </div>
                         </div>
