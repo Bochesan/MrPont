@@ -60,7 +60,8 @@ function cssBuild() {
         .pipe(rename('main.min.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
-            cascade: false
+            cascade: false,
+            grid: 'autoplace'
         }))
         .pipe(csso())
         .pipe(sourcemaps.write('../maps'))
