@@ -12,30 +12,38 @@
         margin-right: 2%;
         border: 1px solid #3A3A3A;
         position: relative;
-        min-height: rel-size(840px);
+        height: 33vmax;
 
         +below(1280px)
             width: 58%;
-            min-height: rel-size(640px);
 
         +below(768px)
             width: 100%;
             margin-right: 0;
             margin-bottom: rel-size(30px);
-            min-height: rel-size(440px);
 
-    &__slider
-        position: absolute;
-        top: 0;
-        left: 0;
+    &__slider-image
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    &__slider
+        width: 100%;
+        height: 100%;
+        padding-bottom: rel-size(50px);
+
+        img
+            max-height: 100%;
+            max-width: 100%;
 
         .swiper-slide
-            //min-height: rel-size(840px);
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            height: 100%;
 
     &__info
         width: 40%;

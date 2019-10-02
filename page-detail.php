@@ -18,7 +18,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="detail__slider-image">
-                                <img src="/dist/images/image.jpg" alt="">
+                                <img src="/dist/images/image2.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
