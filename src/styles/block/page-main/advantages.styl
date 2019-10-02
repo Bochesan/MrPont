@@ -10,17 +10,19 @@
                 flex-wrap: wrap;
 
     &__container
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        height: auto;
 
-        +below(640px)
-            flex-wrap: initial;
-            justify-content: initial;
+        +above(640px)
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: rel-size(50px);
+            grid-row-gap: rel-size(80px);
+
+        +above(1240px)
+            grid-template-columns: 2fr 3fr 3fr;
 
     &__slider
         padding-top: 15%;
+        padding-bottom: rel-size(80px);
 
         +below(1240px)
             padding-top: 0;
@@ -29,45 +31,31 @@
             padding-bottom: rel-size(80px);
             margin-bottom: rel-size(30px);
 
+        +above(640px)
+            .swiper-pagination
+                display: none;
+
+
+
 .advantages-box
-    width: rel-size(400px);
-    margin: 0 rel-size(160px) rel-size(80px) 0;
 
-    +below(1560px)
-        margin: 0 rel-size(80px) rel-size(80px) 0;
+    +above(640px)
+        grid-column-start: 1;
+        grid-column-end: 2;
 
-    +below(1440px)
-        margin: 0 rel-size(40px) rel-size(80px) 0;
-
-    +below(1360px)
-        width: rel-size(330px);
-
-    +below(1240px)
-        width: 30%;
-        margin: 0 1.5% rel-size(80px);
-
-    +below(980px)
-        width: 46%;
-        margin: 0 2% rel-size(80px);
-
-    +below(640px)
-        width: 100%;
-        margin: 0;
-        padding: 0 rel-size(30px) 0 1px;
+    +above(1240px)
+        grid-column-start: 2;
+        grid-column-end: 3;
 
     &:nth-child(2n)
-        margin-right: 0;
 
-        +below(1240px)
-            margin: 0 1.5% rel-size(80px);
+        +above(640px)
+            grid-column-start: 2;
+            grid-column-end: 3;
 
-        +below(980px)
-            width: 46%;
-            margin: 0 2% rel-size(80px);
-
-        +below(640px)
-            width: 100%;
-            margin: 0;
+        +above(1240px)
+            grid-column-start: 3;
+            grid-column-end: 4;
 
     &__title
         font-family: ff-Quasimodo;

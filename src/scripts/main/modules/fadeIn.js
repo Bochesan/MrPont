@@ -16,7 +16,7 @@
             var scrolled = this.pageYOffset;
 
             self._scrollPoint = parseInt(self._self.getBoundingClientRect().top);
-            if (scrolled + window.innerHeight / 1.3 >= (self._scrollPoint + scrolled - 25)) {
+            if (scrolled + window.innerHeight / 1.1 >= (self._scrollPoint + scrolled - 25)) {
                 self.fadeIn();
             }
         }
