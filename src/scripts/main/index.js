@@ -9,3 +9,4 @@ import * as mask from './modules/mask';
 import * as map from './modules/map';
 import * as filter from './modules/filter';
 import * as search from './modules/search';
+import * as scrollTop from './modules/scrollTop';
